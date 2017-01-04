@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "file": "adaptive.css",
+  "sources": [
+    "adaptive.scss"
+  ],
+  "mappings": ";AAAA,6BAA6B;AAC7B,yCAAyC;AACzC,6BAA6B;AAE7B,MAAM,EAAL,SAAS,EAAE,MAAM;;EAChB,AAAA,UAAU,CAAC;IAAC,eAAe,EAAE;;AAG/B,0BAA0B;AAE1B,MAAM,EAAL,SAAS,EAAE,KAAK;;EACf,AAAA,UAAU,CAAC;IAAC,eAAe,EAAE;;AAG/B,0BAA0B;AAE1B,MAAM,EAAL,SAAS,EAAE,KAAK;;EACf,AAAA,UAAU,CAAC;IAAC,aAAa,EAAE",
+  "names": []
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Close Button</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="8.98945775" cy="8.98945775" r="8.98945775"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="17.9789155" height="17.9789155" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rotator-map" transform="translate(-1026.000000, -103.000000)" stroke="#1D8DD3">
+            <g id="Close-Button" transform="translate(1026.563150, 103.179343)">
+                <use id="Oval" mask="url(#mask-2)" stroke-width="3" xlink:href="#path-1"></use>
+                <path d="M4.95341891,5.2098416 L12.7617818,13.0182045" id="Path-3" stroke-width="1.5"></path>
+                <path d="M4.95341891,5.2098416 L12.7617818,13.0182045" id="Path-3" stroke-width="1.5" transform="translate(8.857600, 9.114023) scale(-1, 1) translate(-8.857600, -9.114023) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

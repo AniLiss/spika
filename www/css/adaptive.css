@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* ####################### */
+/* Адаптивная верстка */
+/* ####################### */
+@media (max-width: 1000px) {
+  /* line 6, D:/Projects/home/spika/www/css/adaptive.scss */
+  .container {
+    /*width:600px*/ } }
+
+/* Брейкпойнт */
+@media (max-width: 649px) {
+  /* line 12, D:/Projects/home/spika/www/css/adaptive.scss */
+  .container {
+    /*width:400px*/ } }
+
+/* Брейкпойнт */
+@media (max-width: 479px) {
+  /* line 18, D:/Projects/home/spika/www/css/adaptive.scss */
+  .container {
+    /*width:90%*/ } }
+
+/*# sourceMappingURL=adaptive.css.map */

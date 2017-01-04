@@ -564,38 +564,4 @@ select, input, textarea {
   box-sizing: border-box;
   padding-left: 74px; }
 
-/* ####################### */
-/* Секции, страницы, уникальные блоки */
-/* ####################### */
-/* line 7, D:/Projects/home/spika/www/css/default.scss */
-.page-ui {
-  min-height: 4000px; }
-
-/* ####################### */
-/* Всплывающие окна и пр. */
-/* ####################### */
-/* line 22, D:/Projects/home/spika/www/css/default.scss */
-.popup {
-  display: none; }
-
-/* ####################### */
-/* Адаптивная верстка */
-/* ####################### */
-@media (max-width: 1000px) {
-  /* line 6, D:/Projects/home/spika/www/css/adaptive.scss */
-  .container {
-    /*width:600px*/ } }
-
-/* Брейкпойнт */
-@media (max-width: 649px) {
-  /* line 12, D:/Projects/home/spika/www/css/adaptive.scss */
-  .container {
-    /*width:400px*/ } }
-
-/* Брейкпойнт */
-@media (max-width: 479px) {
-  /* line 18, D:/Projects/home/spika/www/css/adaptive.scss */
-  .container {
-    /*width:90%*/ } }
-
-/*# sourceMappingURL=default.css.map */
+/*# sourceMappingURL=basics.css.map */

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1212px" height="131px" viewBox="0 0 1212 131" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="4.63846283%" x2="97.0269815%" y2="87.9661893%" id="linearGradient-1">
+            <stop stop-color="#5CC3F1" offset="0%"></stop>
+            <stop stop-color="#4990ED" offset="72.6124043%"></stop>
+            <stop stop-color="#5EC0E3" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Call-to-Action" transform="translate(0.000000, -4.000000)" fill="url(#linearGradient-1)">
+            <rect id="Rectangle-2" x="0.545507493" y="4" width="1211" height="131" rx="65.5"></rect>
+        </g>
+    </g>
+</svg>

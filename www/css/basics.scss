@@ -1,41 +1,28 @@
-@mixin border-radius($topleft, $topright: $topleft, $bottomright: $topleft, $bottomleft: $topleft) {
-    -moz-border-radius-topleft:     $topleft;
-    -moz-border-radius-topright:    $topright;
-    -moz-border-radius-bottomright: $bottomright;
-    -moz-border-radius-bottomleft:  $bottomleft;
-    -webkit-border-radius:          $topleft $topright $bottomright $bottomleft;
-    border-radius:                  $topleft $topright $bottomright $bottomleft;
-}
-@mixin transition($transition-property, $transition-time, $method) {
-    -webkit-transition: $transition-property $transition-time $method;
-    -moz-transition: $transition-property $transition-time $method;
-    -ms-transition: $transition-property $transition-time $method;
-    -o-transition: $transition-property $transition-time $method;
-    transition: $transition-property $transition-time $method;
-}
-@mixin box-shadow($top, $left, $blur, $else, $color, $inset: false) {
-  @if $inset {
-    -webkit-box-shadow:inset $top $left $blur $else $color;
-    -moz-box-shadow:inset $top $left $blur $else $color;
-    box-shadow:inset $top $left $blur $else $color;
-  } @else {
-    -webkit-box-shadow: $top $left $blur $else $color;
-    -moz-box-shadow: $top $left $blur $else $color;
-    box-shadow: $top $left $blur $else $color;
-  }
-}
-@mixin gradient($from, $to) {
-  background-color: $from;
-  background-image: -moz-linear-gradient($from, $to);
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from), to($to));
-  background-image: -webkit-linear-gradient($from, $to);
-  background-image: -o-linear-gradient($from, $to);
-}
-@mixin box-sizing {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
+/* ####################### */
+/* Цвета */
+/* ####################### */
+
+$main: #7cb8ff;
+
+
+
+
+
+/* ####################### */
+/* Шрифты */
+/* ####################### */
+
+$lato: "Lato", Arial, sans-serif;
+$ptserif: "PT Serif", "Lato", Arial, sans-serif;
+$muller: "Muller", "Lato", Arial, sans-serif;
+
+
+
+
+
+/* ####################### */
+/* Базовый CSS */
+/* ####################### */
 
 button::-moz-focus-inner,
 input[type="reset"]::-moz-focus-inner,
@@ -47,21 +34,21 @@ border: none;
 }
 *:focus {outline: none;}
 
-// Цвет выделения текста
-::selection {background: blue;color:white;}
-::-moz-selection {background: blue;color:white;}
-::-webkit-selection {background: blue;color:white;}
+/* Цвет выделения текста */
+::selection {background: $main; color:white;}
+::-moz-selection {background: $main; color:white;}
+::-webkit-selection {background: $main; color:white;}
 
-// Цвет плейсхолдера //
-::-webkit-input-placeholder {color:#777}
-::-moz-placeholder {color:#777}
-:-ms-input-placeholder {color:#777}
-:-moz-placeholder {color:#777}
+/* Цвет плейсхолдера */
+::-webkit-input-placeholder {color:#cacaca}
+::-moz-placeholder {color:#cacaca}
+:-ms-input-placeholder {color:#cacaca}
+:-moz-placeholder {color:#cacaca}
 
-// Фиксирование для body (при кастомных модальных окнах)
+/* Фиксирование для body (при кастомных модальных окнах) */
 .noscroll {position: fixed;}
 
-// Настройки для автозаполнения Chrome
+/* Настройки для автозаполнения Chrome */
 input:-webkit-autofill {
     -webkit-text-fill-color: black !important; // Поменять цвет на аналогичный цвету input'а
 }
@@ -77,94 +64,192 @@ input:-webkit-autofill:active {
 
 
 
+/* ####################### */
+/* Основы */
+/* ####################### */
 
-
-
-// Сетка //
-$col-m:2.6%; // Расстояние между колонками
-$col:(100-($col-m*11))/12; // Ширина колонки
-
-.one-col {width:$col}
-.two-col {width:$col*2+$col-m*1;}
-.three-col {width:$col*3+$col-m*2;}
-.four-col {width:$col*4+$col-m*3;}
-.five-col {width:$col*5+$col-m*4;}
-.six-col {width:$col*6+$col-m*5;}
-.seven-col {width:$col*7+$col-m*6;}
-.eight-col {width:$col*8+$col-m*7;}
-.nine-col {width:$col*9+$col-m*8;}
-.ten-col {width:$col*10+$col-m*9;}
-.eleven-col {width:$col*11+$col-m*10;}
-.twelve-col {width:$col*12+$col-m*11;}
-
-// Равное расстояние между колонками
-.cols {text-align:justify; text-justify:distribute;
-  &:after {content:""; display:inline-block; height:0.0000000000001px; width:100%;}
-    >* {display:inline-block; @include box-sizing; vertical-align: top;
-  }
+html {width:100%; min-height:100%}
+body {width:100%; min-height:100%; font-size:0; font-family: $lato;}
+html, body {overflow-x: hidden}
+header, section, footer, main {width:100%; float:left; clear:left;}
+.container {width:1210px; margin:0 auto;
+    &_big {width:1290px}
 }
-// Сетка //
 
 
 
 
 
+/* ####################### */
+/* Типографика */
+/* ####################### */
 
-
-
-
-// Основы //
-html {width:100%; height:100%}
-body {width:100%; min-height:100%; font-size:0; font-family: 'PT Sans', Arial, sans-serif;}
-
-header, section, footer {width:100%; float:left;}
-.container {width:960px; margin:0 auto;}
-// Основы //
-
-
-
-
-
-
-
-
-
-// Типографика //
 h1,h2,h3,h4,h5,h6,p,span,ul,li {margin:0; padding:0}
 ul {list-style:none}
 span {font-style: inherit; font-family: inherit; font-weight: inherit;}
-
-h1,h2,h3,h4,h5 {} // Общие стили для заголовков (если есть)
-
-// Стили заголовков (удалить лишнее)
-h1 {font-size:36px; line-height:1.2em;}
-h2 {font-size:30px; line-height:1.2em;}
-h3 {font-size:24px; line-height:1.2em;}
-h4 {font-size:20px; line-height:1.2em;}
-h5 {font-size:18px; line-height:1.2em;}
-
-// Стили абзацев (удалить лишнее)
 p {font-size:14px; line-height:1.7em;}
-p.small {font-size:12px;}
-p.big {font-size:16px;}
-p.huge {font-size:18px;}
-// Типографика //
+
+.subtitle {font-size:74px; text-align: center; text-transform: uppercase; line-height:(89/74)*1em; font-weight:100; color:#7cb8ff}
+.smalltitle {font-size:20px; line-height:(24/20)*1em; color:#8e99a8; font-weight:600;
+    a {border-bottom:1px solid;
+        &:hover {color:#8e99a8}
+    }
+    &+.blue-links-list {margin-top:23px;}
+}
 
 
 
 
 
+/* ####################### */
+/* Формы, кнопки, поля ввода */
+/* ####################### */
 
-
-
-
-// Формы, кнопки, поля ввода //
-a,input,button,select,textarea {@include transition(all, 0.25s, ease-in-out); @include box-sizing;}
+a,input,button,select,textarea,.button,use {transition:all .2s ease-in-out; box-sizing:border-box;}
 a {text-decoration: inherit; font-weight: inherit; line-height:inherit; color:inherit;}
 
-select, input, textarea {padding: 10px; text-align: left; margin: 0; padding:0; border: 0; font-size: 14px; display:inline-block;}
+select, input, textarea {padding: 10px; text-align: left; margin: 0; padding:0; border: 0; border-radius:0; font-size: 14px; display:inline-block;}
 
-.button {text-align:center; border:0; padding:10px; display:inline-block; color:white; font-size:15px; background-color: green;
-  &::hover {background-color:blue}
+.button {text-align:center; border-radius:1000px; border:1px solid #7eb9ff; padding:0 20px; display:inline-block; color:#3078bf; font-size:14px; height:42px; line-height:40px; background-color: transparent;
+    &:hover {background-color:#3078bf; box-shadow: 0 13px 15px 0 rgba(0, 0, 0, 0.06); border-color:#1d8dd3; color:white;}
+    &:active {box-shadow:0 0 0 0 transparent;}
+    &:disabled {border-color:#dedede; color:#cacaca;}
+    &__big {height:44px; line-height:42px; font-size:20px;}
 }
-// Формы, кнопки, поля ввода //
+
+
+
+
+
+/* ####################### */
+/* Элементы UI */
+/* ####################### */
+
+.header {padding-top:7px;
+    .container {display:flex; justify-content: space-between; align-items: flex-end;}
+    &__logo {position: relative; bottom:2px;
+        img {background-color:#ccc}
+    }
+    &__menu {margin:0 20px; margin-bottom: 34px;
+        li {display:inline-block; vertical-align: middle; margin-right:28px;
+            &:last-child {margin-right:0}
+        }
+        a {line-height:(17/14)*1em; font-size: 14px; font-weight: 500; letter-spacing: 0.026em; color: #2c7cc3; text-transform: uppercase;
+            &:hover {color:#5f98da;
+                use {fill:#5f98da}
+            }
+            use {fill:#1893D3;}
+            svg {vertical-align: middle; margin-bottom:2px}
+        }
+    }
+    &__infoblock {text-align: right;}
+    &__social {
+        li {display:inline-block; vertical-align: middle; margin-left:15px;}
+        use {fill:#2b79be}
+        a:hover use {fill:#5f98da}
+        .green-eye-icon {
+            use {fill:#80be2b;}
+            &:hover use {fill:#99d647}
+        }
+    }
+    &__contacts {line-height:(17/14)*1em; font-size: 14px; letter-spacing: 0.02em; color: #4e7ab5; margin-top:16px;}
+}
+
+/* ####################### */
+
+.page-heading {text-align: center; width:100%; margin-top:22px;
+    &__container {display:inline-block; text-align: left;}
+    &__breadcrumbs {margin-left: -11px;
+        li {display:inline-block; vertical-align: top; margin-right:20px;
+            &:last-child {margin-right:0;}
+        }
+        a {line-height:(24/20)*1em; font-size: 20px; color: #7cb8ff; display:inline-block; position: relative; padding-left:13px;
+            &:before {position: absolute; content:""; width:6px; height:12px; background-color:#ccc; left:0; top:0; bottom:0; margin:auto; transition:all .25s ease-in-out; transform:translate3d(0,0,0);}
+            &:hover:before {transform:translate3d(-5px,0,0);}
+        }
+        
+    }
+    &__heading {line-height:(89/74)*1em; font-size: 74px; font-weight: 300; color: #7cb8ff; text-transform: uppercase; margin-top:-2px;}
+}
+
+/* ####################### */
+
+.search-block {text-align: center; margin-top:8px;
+    &__form {width:680px; max-width:100%; display:inline-block; position: relative}
+    &__input {width:100%; line-height:52px; height:52px; text-align: center; box-shadow: inset 0 3px 5px 0 rgba(0, 0, 0, 0.06), 0 18px 50px -20px rgba(0, 0, 0, 0.35); font-size:15px; border-radius:1000px;}
+    &__nav {position: absolute; width:32px; height:32px; top:0; bottom:0; right:23px; margin:auto;}
+    &__start {z-index:1; width:100%; height:100%; position: absolute; top:0; left:0; background-color:#ccc; border:0;}
+    &__close {z-index:2; position: absolute; top:0; left:0; width:100%; height:100%;
+        img {position: absolute; top:0; left:0; right:0; bottom:0; margin:auto;}
+    }
+}
+
+/* ####################### */
+
+.text-image-block {overflow:hidden; border-radius:0 56px 56px 56px; position: relative; padding: 49px 42% 38px 75px; box-sizing: border-box;
+    $text-image-block-heading: #4e7ab5;
+    $text-image-block-text: #7c7c7c;
+    $text-image-block-bgcolor: #f0f0f0; 
+    
+    background-color:$text-image-block-bgcolor; box-shadow:0 60px 80px -54px rgba(0, 0, 0, 0.12);
+    
+    &__heading {font-family: $muller; font-size: 53px; font-weight:100; line-height:(64/53)*1em; color:$text-image-block-heading; position:relative; z-index:2;}
+    &__text {color:$text-image-block-text; font-size:15px; line-height:(18/15)*1em; position:relative; z-index:2; margin-top: 18px;}
+    &__buttons {display:block; position:relative; z-index:2; margin-top:22px;
+        .button {display:inline-block; margin-right:20px; min-width:173px;}
+    }
+    &__bgimage {position: absolute; right:0; bottom:0; max-height:100%;}
+}
+
+/* ####################### */
+
+.main-content {margin-top:35px;}
+
+/* ####################### */
+
+.footer {background-color: #fafafa; padding:68px 0 32px;
+    .container {display:flex; justify-content: space-between; align-content: flex-start; box-sizing:border-box; padding:0 34px;}
+    &__col {margin:0 15px;
+        &:first-child {margin-left:0}
+        &:last-child {margin-right:0}
+    }
+    &__menu, &__contacts {font-size:14px; line-height:(17/14*1em); letter-spacing: 0.02em; color:#6e6e6e;}
+    &__menu a:hover {color:#4e7ab5}
+    &__agency {font-size:12px; line-height:(15/12)*1em; letter-spacing: 0.02em; color:#86898c;
+        a {display:block; margin:11px 0 10px;
+            &:hover {opacity:.7}
+        }
+    }
+    &__contacts a {color:#4e7ab5; font-weight:700; text-decoration: underline;
+        &:hover {color:#5f98da}
+    }
+    &__logo {margin:-43px 0 0 -37px;
+        img {background-color:#ccc;}
+    }
+    &__social {margin-top: 16px;
+        li {display:inline-block; vertical-align: middle; margin-right:25px;
+            &:last-child {margin-right:0;}
+        }
+        use {fill:#2b79be}
+        a:hover use {fill:#5f98da}
+    }
+    &__copyright {font-size:11px; line-height:(13/11)*1em; color:#6e6e6e; letter-spacing: 0.02em; margin-top: 13px;}
+}
+
+/* ####################### */
+
+.blue-links-list {font-size: 16px; color: #3078bf; line-height:1.45em;
+    li {padding-left:33px; position: relative;
+        &:before {content:"•"; position: absolute; left:8px; top:0;}
+    }
+}
+
+/* ####################### */
+
+.columns {display:flex; justify-content: space-between; align-content: flex-start;
+    &__third {width:27.5%;}
+}
+
+/* ####################### */
+
+.page-content-padding {box-sizing:border-box; padding-left:74px;}

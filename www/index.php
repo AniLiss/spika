@@ -11,20 +11,14 @@
 
 <body> 
 
-<header>
-    <div class="container">
-    </div>
-</header>
+<?php include "blocks/header.php"; ?>
 
 <section class="">
     <div class="container">
     </div>
 </section>
 
-<footer>
-    <div class="container">
-    </div>
-</footer>
+<?php include "blocks/footer.php"; ?>
 
 <?php include "blocks/forms.php"; ?>
 <?php include "blocks/scripts.php"; ?>

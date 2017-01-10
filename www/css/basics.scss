@@ -199,6 +199,10 @@ select, input, textarea {padding: 10px; text-align: left; margin: 0; padding:0; 
         .button {display:inline-block; margin-right:20px; min-width:173px;}
     }
     &__bgimage {position: absolute; right:0; bottom:0; max-height:100%;}
+	&_notext {height: 586px; padding: 0; background-color: #fff;
+		p, div {margin: 0;}
+		img {left: 0; top: 0; margin: auto;}
+	}
 }
 
 /* ####################### */

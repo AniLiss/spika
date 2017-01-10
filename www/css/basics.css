@@ -627,7 +627,9 @@ select, input, textarea {
   border-radius: 36px;
   border: dashed 1.5px #c9caca;
   box-sizing: border-box;
-  padding: 16px 250px 23px 16px; }
+  padding: 16px 250px 23px 16px;
+  overflow: hidden;
+  box-shadow: 0 25px 35px -20px #ccc; }
   /* line 277, C:/wamp64/www/spika/www/css/basics.scss */
   .action-block:nth-child(n+3) {
     margin-top: 28px; }
@@ -648,26 +650,35 @@ select, input, textarea {
     font-size: 11px;
     color: #86898c;
     padding-left: 3px; }
-  /* line 282, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 282, C:/wamp64/www/spika/www/css/basics.scss */
+    .action-block__bottominfo a:hover {
+      opacity: 0.6; }
+  /* line 284, C:/wamp64/www/spika/www/css/basics.scss */
   .action-block__image {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 35px;
+    right: 37px;
     max-height: 80%;
     max-width: 80%;
-    background-color: grey; }
-    /* line 283, C:/wamp64/www/spika/www/css/basics.scss */
+    background-color: #ccc; }
+    /* line 285, C:/wamp64/www/spika/www/css/basics.scss */
     .action-block__image_bg {
       height: 100%;
       max-height: 100%;
       max-width: initial;
       top: 0;
       right: 0; }
-  /* line 286, C:/wamp64/www/spika/www/css/basics.scss */
-  .action-block_lightblue .action-block__heading {
-    color: #4a414b; }
-  /* line 289, C:/wamp64/www/spika/www/css/basics.scss */
-  .action-block_lightgold .action-block__heading {
-    color: #4a414b; }
+  /* line 287, C:/wamp64/www/spika/www/css/basics.scss */
+  .action-block_lightblue {
+    background-color: lightblue; }
+    /* line 288, C:/wamp64/www/spika/www/css/basics.scss */
+    .action-block_lightblue .action-block__heading {
+      color: #4a414b; }
+  /* line 290, C:/wamp64/www/spika/www/css/basics.scss */
+  .action-block_lightgold {
+    background-color: palegoldenrod; }
+    /* line 291, C:/wamp64/www/spika/www/css/basics.scss */
+    .action-block_lightgold .action-block__heading {
+      color: #4a414b; }
 
 /*# sourceMappingURL=basics.css.map */

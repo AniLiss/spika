@@ -90,7 +90,7 @@ span {font-style: inherit; font-family: inherit; font-weight: inherit;}
 p {font-size:14px; line-height:1.7em;}
 
 .subtitle {font-size:74px; text-align: center; text-transform: uppercase; line-height:(89/74)*1em; font-weight:100; color:#7cb8ff}
-.smalltitle {font-size:20px; line-height:(24/20)*1em; color:#8e99a8; font-weight:600;
+.smalltitle {font-size:20px; line-height:(24/20)*1em; color:#8e99a8; font-weight:600; letter-spacing: 0.01em;
     a {border-bottom:1px solid; color:inherit}
     a:hover {color:#abb3bd}
     &+.blue-links-list {margin-top:23px;}
@@ -256,7 +256,7 @@ select, input, textarea {padding: 10px; text-align: left; margin: 0; padding:0; 
     &__two-of-three {width:63.75%}
     &__one {width:100%}
     &__two {width:45.625%}
-    &__maintext {text-indent: 28px; font-size:15px; line-height:1.25em; color: #4b4b4b;
+    &__maintext {text-indent: 28px; font-size:15px; line-height:1.25em; color: #4b4b4b; letter-spacing: 0.003em;
         &+.columns__maintext {margin-top:25px;}
     }
 }

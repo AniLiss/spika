@@ -27,11 +27,11 @@
 <!-- // Заголовок + хлебные крошки -->
 
 <!-- Контент страницы  -->
-<main class="main-content patients">
+<main class="main-content">
     <div class="container">
     	
     	<!-- Текстовый блок с картинкой -->
-        <div class="text-image-block text-image-block_notext text-image-block_fullbg"><!-- .text-image-block_fullbg - еще одна вариация блока. Эта отвечает за блок, у которого картинка ПОЛНОСТЬЮ заполняет блок. У картинки будет left:0; top:0; object-fit:cover; min-width:100%; min-height:100%; width:0; max-height:auto -->
+        <div class="text-image-block text-image-block_notext text-image-block_fullbg">
             <p class="text-image-block__heading"></p>
             <p class="text-image-block__text"></p>
             <div class="text-image-block__buttons"></div>

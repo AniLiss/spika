@@ -9,7 +9,7 @@
     <?php include "blocks/css.php"; ?>
 </head>
 
-<body> 
+<body class="page-doctors"> 
 
 <?php include "blocks/header.php"; ?>
 
@@ -28,7 +28,7 @@
 <!-- // Заголовок + хлебные крошки -->
 
 <!-- Контент страницы  -->
-<main class="main-content doctors">
+<main class="main-content">
     <div class="container">
     
     	 <!-- Переключатели контента -->
@@ -42,186 +42,203 @@
         <!-- // Переключатели контента -->
         
         <!-- Список врачей -->
-        <ul class="doctors-list">
-            <li>
-            	<div class="image">
-            		<img src="" alt="">
-            	</div>
-            	<p class="doctor-name">Дмитрий Штольц</p>
-            	<p>Опыт работы: 10 лет<br>
-            	Ботулинотерапия<br>
-            	Контурная пластика</p>
-            	<p><a href="">Подробнее</a></p>
+        <ul class="doctors-list"> <!-- default.scss -->
+            <li class="doctor-smallblock"> <!-- basics.scss -->
+            	<div class="doctor-smallblock__image"><img src="" alt=""></div>
+            	<p class="doctor-smallblock__name">Дмитрий Штольц</p>
+                <p class="doctor-smallblock__info">Опыт работы: 10 лет</p> <!-- Поскольку здесь, у списка ниже и у ссылки стили одинаковые (кроме подчеркивания у ссылки), надо через запятую им задать одинаковый стиль. Т.е. .doctor-smallblock__info, .doctor-smallblock__list, .doctor-smallblock__link {стили} -->
+                <ul class="doctor-smallblock__list">
+                    <li>Ботулинотерапия</li>
+                    <li>Контурная пластика</li>
+                </ul>
+                <a href="#" class="doctor-smallblock__link">Подробнее</a>
             </li>
-            <li>
-            	<div class="image">
-            		<img src="" alt="">
-            	</div>
-            	<p class="doctor-name">Дмитрий Штольц</p>
-            	<p>Опыт работы: 10 лет<br>
-            	Ботулинотерапия<br>
-            	Контурная пластика</p>
-            	<p><a href="">Подробнее</a></p>
+            
+            <li class="doctor-smallblock">
+            	<div class="doctor-smallblock__image"><img src="" alt=""></div>
+            	<p class="doctor-smallblock__name">Дмитрий Штольц</p>
+                <p class="doctor-smallblock__info">Опыт работы: 10 лет</p>
+                <ul class="doctor-smallblock__list">
+                    <li>Ботулинотерапия</li>
+                    <li>Контурная пластика</li>
+                </ul>
+                <a href="#" class="doctor-smallblock__link">Подробнее</a>
             </li>
-            <li>
-            	<div class="image">
-            		<img src="" alt="">
-            	</div>
-            	<p class="doctor-name">Дмитрий Штольц</p>
-            	<p>Опыт работы: 10 лет<br>
-            	Ботулинотерапия<br>
-            	Контурная пластика</p>
-            	<p><a href="">Подробнее</a></p>
+            
+            <li class="doctor-smallblock">
+            	<div class="doctor-smallblock__image"><img src="" alt=""></div>
+            	<p class="doctor-smallblock__name">Дмитрий Штольц</p>
+                <p class="doctor-smallblock__info">Опыт работы: 10 лет</p>
+                <ul class="doctor-smallblock__list">
+                    <li>Ботулинотерапия</li>
+                    <li>Контурная пластика</li>
+                </ul>
+                <a href="#" class="doctor-smallblock__link">Подробнее</a>
             </li>
-            <li>
-            	<div class="image">
-            		<img src="" alt="">
-            	</div>
-            	<p class="doctor-name">Дмитрий Штольц</p>
-            	<p>Опыт работы: 10 лет<br>
-            	Ботулинотерапия<br>
-            	Контурная пластика</p>
-            	<p><a href="">Подробнее</a></p>
+            
+            <li class="doctor-smallblock">
+            	<div class="doctor-smallblock__image"><img src="" alt=""></div>
+            	<p class="doctor-smallblock__name">Дмитрий Штольц</p>
+                <p class="doctor-smallblock__info">Опыт работы: 10 лет</p>
+                <ul class="doctor-smallblock__list">
+                    <li>Ботулинотерапия</li>
+                    <li>Контурная пластика</li>
+                </ul>
+                <a href="#" class="doctor-smallblock__link">Подробнее</a>
             </li>
-            <li>
-            	<div class="image">
-            		<img src="" alt="">
-            	</div>
-            	<p class="doctor-name">Дмитрий Штольц</p>
-            	<p>Опыт работы: 10 лет<br>
-            	Ботулинотерапия<br>
-            	Контурная пластика</p>
-            	<p><a href="">Подробнее</a></p>
+            
+            <li class="doctor-smallblock">
+            	<div class="doctor-smallblock__image"><img src="" alt=""></div>
+            	<p class="doctor-smallblock__name">Дмитрий Штольц</p>
+                <p class="doctor-smallblock__info">Опыт работы: 10 лет</p>
+                <ul class="doctor-smallblock__list">
+                    <li>Ботулинотерапия</li>
+                    <li>Контурная пластика</li>
+                </ul>
+                <a href="#" class="doctor-smallblock__link">Подробнее</a>
             </li>
-            <li>
-            	<div class="image">
-            		<img src="" alt="">
-            	</div>
-            	<p class="doctor-name">Дмитрий Штольц</p>
-            	<p>Опыт работы: 10 лет<br>
-            	Ботулинотерапия<br>
-            	Контурная пластика</p>
-            	<p><a href="">Подробнее</a></p>
+            
+            <li class="doctor-smallblock">
+            	<div class="doctor-smallblock__image"><img src="" alt=""></div>
+            	<p class="doctor-smallblock__name">Дмитрий Штольц</p>
+                <p class="doctor-smallblock__info">Опыт работы: 10 лет</p>
+                <ul class="doctor-smallblock__list">
+                    <li>Ботулинотерапия</li>
+                    <li>Контурная пластика</li>
+                </ul>
+                <a href="#" class="doctor-smallblock__link">Подробнее</a>
             </li>
-            <li>
-            	<div class="image">
-            		<img src="" alt="">
-            	</div>
-            	<p class="doctor-name">Дмитрий Штольц</p>
-            	<p>Опыт работы: 10 лет<br>
-            	Ботулинотерапия<br>
-            	Контурная пластика</p>
-            	<p><a href="">Подробнее</a></p>
+            
+            <li class="doctor-smallblock">
+            	<div class="doctor-smallblock__image"><img src="" alt=""></div>
+            	<p class="doctor-smallblock__name">Дмитрий Штольц</p>
+                <p class="doctor-smallblock__info">Опыт работы: 10 лет</p>
+                <ul class="doctor-smallblock__list">
+                    <li>Ботулинотерапия</li>
+                    <li>Контурная пластика</li>
+                </ul>
+                <a href="#" class="doctor-smallblock__link">Подробнее</a>
             </li>
-            <li>
-            	<div class="image">
-            		<img src="" alt="">
-            	</div>
-            	<p class="doctor-name">Дмитрий Штольц</p>
-            	<p>Опыт работы: 10 лет<br>
-            	Ботулинотерапия<br>
-            	Контурная пластика</p>
-            	<p><a href="">Подробнее</a></p>
+            
+            <li class="doctor-smallblock">
+            	<div class="doctor-smallblock__image"><img src="" alt=""></div>
+            	<p class="doctor-smallblock__name">Дмитрий Штольц</p>
+                <p class="doctor-smallblock__info">Опыт работы: 10 лет</p>
+                <ul class="doctor-smallblock__list">
+                    <li>Ботулинотерапия</li>
+                    <li>Контурная пластика</li>
+                </ul>
+                <a href="#" class="doctor-smallblock__link">Подробнее</a>
             </li>
-            <li>
-            	<div class="image">
-            		<img src="" alt="">
-            	</div>
-            	<p class="doctor-name">Дмитрий Штольц</p>
-            	<p>Опыт работы: 10 лет<br>
-            	Ботулинотерапия<br>
-            	Контурная пластика</p>
-            	<p><a href="">Подробнее</a></p>
+            
+            <li class="doctor-smallblock">
+            	<div class="doctor-smallblock__image"><img src="" alt=""></div>
+            	<p class="doctor-smallblock__name">Дмитрий Штольц</p>
+                <p class="doctor-smallblock__info">Опыт работы: 10 лет</p>
+                <ul class="doctor-smallblock__list">
+                    <li>Ботулинотерапия</li>
+                    <li>Контурная пластика</li>
+                </ul>
+                <a href="#" class="doctor-smallblock__link">Подробнее</a>
             </li>
-            <li>
-            	<div class="image">
-            		<img src="" alt="">
-            	</div>
-            	<p class="doctor-name">Дмитрий Штольц</p>
-            	<p>Опыт работы: 10 лет<br>
-            	Ботулинотерапия<br>
-            	Контурная пластика</p>
-            	<p><a href="">Подробнее</a></p>
+            
+            <li class="doctor-smallblock">
+            	<div class="doctor-smallblock__image"><img src="" alt=""></div>
+            	<p class="doctor-smallblock__name">Дмитрий Штольц</p>
+                <p class="doctor-smallblock__info">Опыт работы: 10 лет</p>
+                <ul class="doctor-smallblock__list">
+                    <li>Ботулинотерапия</li>
+                    <li>Контурная пластика</li>
+                </ul>
+                <a href="#" class="doctor-smallblock__link">Подробнее</a>
             </li>
-            <li>
-            	<div class="image">
-            		<img src="" alt="">
-            	</div>
-            	<p class="doctor-name">Дмитрий Штольц</p>
-            	<p>Опыт работы: 10 лет<br>
-            	Ботулинотерапия<br>
-            	Контурная пластика</p>
-            	<p><a href="">Подробнее</a></p>
+            
+            <li class="doctor-smallblock">
+            	<div class="doctor-smallblock__image"><img src="" alt=""></div>
+            	<p class="doctor-smallblock__name">Дмитрий Штольц</p>
+                <p class="doctor-smallblock__info">Опыт работы: 10 лет</p>
+                <ul class="doctor-smallblock__list">
+                    <li>Ботулинотерапия</li>
+                    <li>Контурная пластика</li>
+                </ul>
+                <a href="#" class="doctor-smallblock__link">Подробнее</a>
             </li>
-            <li>
-            	<div class="image">
-            		<img src="" alt="">
-            	</div>
-            	<p class="doctor-name">Дмитрий Штольц</p>
-            	<p>Опыт работы: 10 лет<br>
-            	Ботулинотерапия<br>
-            	Контурная пластика</p>
-            	<p><a href="">Подробнее</a></p>
+            
+            <li class="doctor-smallblock">
+            	<div class="doctor-smallblock__image"><img src="" alt=""></div>
+            	<p class="doctor-smallblock__name">Дмитрий Штольц</p>
+                <p class="doctor-smallblock__info">Опыт работы: 10 лет</p>
+                <ul class="doctor-smallblock__list">
+                    <li>Ботулинотерапия</li>
+                    <li>Контурная пластика</li>
+                </ul>
+                <a href="#" class="doctor-smallblock__link">Подробнее</a>
             </li>
-            <li>
-            	<div class="image">
-            		<img src="" alt="">
-            	</div>
-            	<p class="doctor-name">Дмитрий Штольц</p>
-            	<p>Опыт работы: 10 лет<br>
-            	Ботулинотерапия<br>
-            	Контурная пластика</p>
-            	<p><a href="">Подробнее</a></p>
+            
+            <li class="doctor-smallblock">
+            	<div class="doctor-smallblock__image"><img src="" alt=""></div>
+            	<p class="doctor-smallblock__name">Дмитрий Штольц</p>
+                <p class="doctor-smallblock__info">Опыт работы: 10 лет</p>
+                <ul class="doctor-smallblock__list">
+                    <li>Ботулинотерапия</li>
+                    <li>Контурная пластика</li>
+                </ul>
+                <a href="#" class="doctor-smallblock__link">Подробнее</a>
             </li>
-            <li>
-            	<div class="image">
-            		<img src="" alt="">
-            	</div>
-            	<p class="doctor-name">Дмитрий Штольц</p>
-            	<p>Опыт работы: 10 лет<br>
-            	Ботулинотерапия<br>
-            	Контурная пластика</p>
-            	<p><a href="">Подробнее</a></p>
+            
+            <li class="doctor-smallblock">
+            	<div class="doctor-smallblock__image"><img src="" alt=""></div>
+            	<p class="doctor-smallblock__name">Дмитрий Штольц</p>
+                <p class="doctor-smallblock__info">Опыт работы: 10 лет</p>
+                <ul class="doctor-smallblock__list">
+                    <li>Ботулинотерапия</li>
+                    <li>Контурная пластика</li>
+                </ul>
+                <a href="#" class="doctor-smallblock__link">Подробнее</a>
             </li>
-            <li>
-            	<div class="image">
-            		<img src="" alt="">
-            	</div>
-            	<p class="doctor-name">Дмитрий Штольц</p>
-            	<p>Опыт работы: 10 лет<br>
-            	Ботулинотерапия<br>
-            	Контурная пластика</p>
-            	<p><a href="">Подробнее</a></p>
+            
+            <li class="doctor-smallblock">
+            	<div class="doctor-smallblock__image"><img src="" alt=""></div>
+            	<p class="doctor-smallblock__name">Дмитрий Штольц</p>
+                <p class="doctor-smallblock__info">Опыт работы: 10 лет</p>
+                <ul class="doctor-smallblock__list">
+                    <li>Ботулинотерапия</li>
+                    <li>Контурная пластика</li>
+                </ul>
+                <a href="#" class="doctor-smallblock__link">Подробнее</a>
             </li>
-            <li>
-            	<div class="image">
-            		<img src="" alt="">
-            	</div>
-            	<p class="doctor-name">Дмитрий Штольц</p>
-            	<p>Опыт работы: 10 лет<br>
-            	Ботулинотерапия<br>
-            	Контурная пластика</p>
-            	<p><a href="">Подробнее</a></p>
+            
+            <li class="doctor-smallblock">
+            	<div class="doctor-smallblock__image"><img src="" alt=""></div>
+            	<p class="doctor-smallblock__name">Дмитрий Штольц</p>
+                <p class="doctor-smallblock__info">Опыт работы: 10 лет</p>
+                <ul class="doctor-smallblock__list">
+                    <li>Ботулинотерапия</li>
+                    <li>Контурная пластика</li>
+                </ul>
+                <a href="#" class="doctor-smallblock__link">Подробнее</a>
             </li>
-            <li>
-            	<div class="image">
-            		<img src="" alt="">
-            	</div>
-            	<p class="doctor-name">Дмитрий Штольц</p>
-            	<p>Опыт работы: 10 лет<br>
-            	Ботулинотерапия<br>
-            	Контурная пластика</p>
-            	<p><a href="">Подробнее</a></p>
+            
+            <li class="doctor-smallblock">
+            	<div class="doctor-smallblock__image"><img src="" alt=""></div>
+            	<p class="doctor-smallblock__name">Дмитрий Штольц</p>
+                <p class="doctor-smallblock__info">Опыт работы: 10 лет</p>
+                <ul class="doctor-smallblock__list">
+                    <li>Ботулинотерапия</li>
+                    <li>Контурная пластика</li>
+                </ul>
+                <a href="#" class="doctor-smallblock__link">Подробнее</a>
             </li>
-            <li>
-            	<div class="image">
-            		<img src="" alt="">
-            	</div>
-            	<p class="doctor-name">Дмитрий Штольц</p>
-            	<p>Опыт работы: 10 лет<br>
-            	Ботулинотерапия<br>
-            	Контурная пластика</p>
-            	<p><a href="">Подробнее</a></p>
+            
+            <li class="doctor-smallblock">
+            	<div class="doctor-smallblock__image"><img src="" alt=""></div>
+            	<p class="doctor-smallblock__name">Дмитрий Штольц</p>
+                <p class="doctor-smallblock__info">Опыт работы: 10 лет</p>
+                <ul class="doctor-smallblock__list">
+                    <li>Ботулинотерапия</li>
+                    <li>Контурная пластика</li>
+                </ul>
+                <a href="#" class="doctor-smallblock__link">Подробнее</a>
             </li>
         </ul>
         <!-- // Список врачей  -->

@@ -6,9 +6,19 @@
 
 .page-ui {min-height:4000px}
 
-.sales-page {
-	.salespage-actionlist {display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 54px; padding-bottom: 58px;}
+.action-blocks-list {display: flex; flex-wrap: wrap; justify-content: space-between;
+    .action-block {width: 49.3%;}
 }
+
+.sales-page {
+    .action-blocks-list {margin-top: 54px;}
+    .main-content {padding-bottom: 58px;}
+}
+
+
+
+
+
 
 
 

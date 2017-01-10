@@ -91,10 +91,10 @@ p {font-size:14px; line-height:1.7em;}
 
 .subtitle {font-size:74px; text-align: center; text-transform: uppercase; line-height:(89/74)*1em; font-weight:100; color:#7cb8ff}
 .smalltitle {font-size:20px; line-height:(24/20)*1em; color:#8e99a8; font-weight:600;
-    a {border-bottom:1px solid;
-        &:hover {color:#8e99a8}
-    }
+    a {border-bottom:1px solid; color:inherit}
+    a:hover {color:#abb3bd}
     &+.blue-links-list {margin-top:23px;}
+    &+.columns__maintext {margin-top:36px;}
 }
 
 
@@ -239,6 +239,7 @@ select, input, textarea {padding: 10px; text-align: left; margin: 0; padding:0; 
 /* ####################### */
 
 .blue-links-list {font-size: 16px; color: #3078bf; line-height:1.45em;
+    a:hover {color: #5d9bd8;}
     li {padding-left:33px; position: relative;
         &:before {content:"•"; position: absolute; left:8px; top:0;}
     }
@@ -248,8 +249,27 @@ select, input, textarea {padding: 10px; text-align: left; margin: 0; padding:0; 
 
 .columns {display:flex; justify-content: space-between; align-content: flex-start;
     &__third {width:27.5%;}
+    &__two-of-three {width:63.75%}
+    &__one {width:100%}
+    &__two {width:45.625%}
+    &__maintext {text-indent: 28px; font-size:15px; line-height:1.25em; color: #4b4b4b;
+        &+.columns__maintext {margin-top:25px;}
+    }
 }
 
 /* ####################### */
 
 .page-content-padding {box-sizing:border-box; padding-left:74px;}
+
+/* ####################### */
+
+.content-changer {text-align: center;
+    li {display:inline-block; margin-right:47px; vertical-align: middle; font-size:20px; line-height:(24/20)*1em; white-space: nowrap; transition: all .25s ease-in-out; color: #3078bf; border-bottom:2px dotted; border-color: transparent; cursor:pointer;
+        &.active {border-color:inherit}
+        &:hover {color: #5d9bd8;}
+        &:last-child {margin-right:0;}
+    }
+}
+
+/* ####################### */
+

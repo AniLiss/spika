@@ -145,13 +145,17 @@ p {
   font-weight: 600; }
   /* line 94, D:/Projects/home/spika/www/css/basics.scss */
   .smalltitle a {
-    border-bottom: 1px solid; }
-    /* line 95, D:/Projects/home/spika/www/css/basics.scss */
-    .smalltitle a:hover {
-      color: #8e99a8; }
-  /* line 97, D:/Projects/home/spika/www/css/basics.scss */
+    border-bottom: 1px solid;
+    color: inherit; }
+  /* line 95, D:/Projects/home/spika/www/css/basics.scss */
+  .smalltitle a:hover {
+    color: #abb3bd; }
+  /* line 96, D:/Projects/home/spika/www/css/basics.scss */
   .smalltitle + .blue-links-list {
     margin-top: 23px; }
+  /* line 97, D:/Projects/home/spika/www/css/basics.scss */
+  .smalltitle + .columns__maintext {
+    margin-top: 36px; }
 
 /* ####################### */
 /* Формы, кнопки, поля ввода */
@@ -538,10 +542,13 @@ select, input, textarea {
   color: #3078bf;
   line-height: 1.45em; }
   /* line 242, D:/Projects/home/spika/www/css/basics.scss */
+  .blue-links-list a:hover {
+    color: #5d9bd8; }
+  /* line 243, D:/Projects/home/spika/www/css/basics.scss */
   .blue-links-list li {
     padding-left: 33px;
     position: relative; }
-    /* line 243, D:/Projects/home/spika/www/css/basics.scss */
+    /* line 244, D:/Projects/home/spika/www/css/basics.scss */
     .blue-links-list li:before {
       content: "•";
       position: absolute;
@@ -549,21 +556,67 @@ select, input, textarea {
       top: 0; }
 
 /* ####################### */
-/* line 249, D:/Projects/home/spika/www/css/basics.scss */
+/* line 250, D:/Projects/home/spika/www/css/basics.scss */
 .columns {
   display: flex;
   justify-content: space-between;
   align-content: flex-start; }
-  /* line 250, D:/Projects/home/spika/www/css/basics.scss */
+  /* line 251, D:/Projects/home/spika/www/css/basics.scss */
   .columns__third {
     width: 27.5%; }
+  /* line 252, D:/Projects/home/spika/www/css/basics.scss */
+  .columns__two-of-three {
+    width: 63.75%; }
+  /* line 253, D:/Projects/home/spika/www/css/basics.scss */
+  .columns__one {
+    width: 100%; }
+  /* line 254, D:/Projects/home/spika/www/css/basics.scss */
+  .columns__two {
+    width: 45.625%; }
+  /* line 255, D:/Projects/home/spika/www/css/basics.scss */
+  .columns__maintext {
+    text-indent: 28px;
+    font-size: 15px;
+    line-height: 1.25em;
+    color: #4b4b4b; }
+    /* line 256, D:/Projects/home/spika/www/css/basics.scss */
+    .columns__maintext + .columns__maintext {
+      margin-top: 25px; }
 
 /* ####################### */
-/* line 255, D:/Projects/home/spika/www/css/basics.scss */
+/* line 262, D:/Projects/home/spika/www/css/basics.scss */
 .page-content-padding {
   box-sizing: border-box;
   padding-left: 74px; }
 
+/* ####################### */
+/* line 266, D:/Projects/home/spika/www/css/basics.scss */
+.content-changer {
+  text-align: center; }
+  /* line 267, D:/Projects/home/spika/www/css/basics.scss */
+  .content-changer li {
+    display: inline-block;
+    margin-right: 47px;
+    vertical-align: middle;
+    font-size: 20px;
+    line-height: 1.2em;
+    white-space: nowrap;
+    transition: all .25s ease-in-out;
+    color: #3078bf;
+    border-bottom: 2px dotted;
+    border-color: transparent;
+    cursor: pointer; }
+    /* line 268, D:/Projects/home/spika/www/css/basics.scss */
+    .content-changer li.active {
+      border-color: inherit; }
+    /* line 269, D:/Projects/home/spika/www/css/basics.scss */
+    .content-changer li:hover {
+      color: #5d9bd8; }
+    /* line 270, D:/Projects/home/spika/www/css/basics.scss */
+    .content-changer li:last-child {
+      margin-right: 0; }
+
+/* ####################### */
 /* ####################### */
 /* Секции, страницы, уникальные блоки */
 /* ####################### */
@@ -574,7 +627,7 @@ select, input, textarea {
 /* ####################### */
 /* Всплывающие окна и пр. */
 /* ####################### */
-/* line 22, D:/Projects/home/spika/www/css/default.scss */
+/* line 18, D:/Projects/home/spika/www/css/default.scss */
 .popup {
   display: none; }
 

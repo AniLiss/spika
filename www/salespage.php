@@ -31,11 +31,14 @@
 <main class="main-content salespage">
     <div class="container">
     	
-    	<!-- Картинка -->
-    	<div class="image-block">
-    		<img src="" alt="">
-    	</div>
-    	<!-- // Картинка -->
+    	<!-- Текстовый блок с картинкой -->
+        <div class="text-image-block text-image-block_notext"> <!-- надо добавить вариацию блока _notext в basics.scss. Она определяет стиль блока в том случае, если нет текста (выравнивает картинку по центру) -->
+            <p class="text-image-block__heading"></p>
+            <p class="text-image-block__text"></p>
+            <div class="text-image-block__buttons"></div>
+            <img src="img/imageblock/example.png" alt="@@" class="text-image-block__bgimage"> <!-- У картинки  -->
+        </div>  
+        <!-- // Текстовый блок с картинкой -->
     	
     	<!-- 1 колонка -->
         <div class="columns page-content-padding">

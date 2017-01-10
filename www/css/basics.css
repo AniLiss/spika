@@ -89,7 +89,7 @@ body {
 
 /* line 73, D:/Projects/home/spika/www/css/basics.scss */
 html, body {
-  overflow-x: hidden; }
+  min-width: 1440px; }
 
 /* line 74, D:/Projects/home/spika/www/css/basics.scss */
 header, section, footer, main {
@@ -195,7 +195,8 @@ select, input, textarea {
   font-size: 14px;
   height: 42px;
   line-height: 40px;
-  background-color: transparent; }
+  background-color: transparent;
+  letter-spacing: 0.02em; }
   /* line 114, D:/Projects/home/spika/www/css/basics.scss */
   .button:hover {
     background-color: #3078bf;
@@ -703,5 +704,70 @@ select, input, textarea {
     /* line 296, D:/Projects/home/spika/www/css/basics.scss */
     .action-block_lightgold .action-block__heading {
       color: #4a414b; }
+
+/* ####################### */
+/* line 302, D:/Projects/home/spika/www/css/basics.scss */
+.service-block {
+  min-height: 278px;
+  position: relative;
+  border-radius: 36px;
+  box-sizing: border-box;
+  padding: 27px 244px 19px 25px;
+  overflow: hidden;
+  transition: all 0.25s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translate3d(0, 0, 0);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06); }
+  /* line 303, D:/Projects/home/spika/www/css/basics.scss */
+  .service-block:nth-child(n+3) {
+    margin-top: 24px; }
+  /* line 304, D:/Projects/home/spika/www/css/basics.scss */
+  .service-block:hover {
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06), 0 29px 35px -20px rgba(0, 0, 0, 0.1); }
+    /* line 305, D:/Projects/home/spika/www/css/basics.scss */
+    .service-block:hover .button {
+      opacity: 1;
+      pointer-events: all;
+      transform: translate3d(0, 0, 0); }
+  /* line 307, D:/Projects/home/spika/www/css/basics.scss */
+  .service-block__heading {
+    min-height: 2.4em; }
+  /* line 308, D:/Projects/home/spika/www/css/basics.scss */
+  .service-block__text {
+    font-size: 15px;
+    color: #4b4b4b;
+    line-height: 1.25em;
+    margin-top: 2px;
+    flex: 1; }
+  /* line 309, D:/Projects/home/spika/www/css/basics.scss */
+  .service-block .button {
+    opacity: 0;
+    pointer-events: none;
+    min-width: 200px;
+    height: 35px;
+    line-height: 35px;
+    transform: translate3d(0, 10px, 0);
+    transform-style: preserve-3d;
+    margin-top: 13px; }
+  /* line 310, D:/Projects/home/spika/www/css/basics.scss */
+  .service-block__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 223px;
+    overflow: hidden; }
+    /* line 311, D:/Projects/home/spika/www/css/basics.scss */
+    .service-block__img img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      object-fit: cover;
+      min-width: 100%;
+      min-height: 100%;
+      width: 0;
+      background-color: #ccc; }
 
 /*# sourceMappingURL=basics.css.map */

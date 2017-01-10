@@ -521,7 +521,8 @@ select, input, textarea {
       color: #5f98da; }
   /* line 230, D:/Projects/home/spika/www/css/basics.scss */
   .footer__logo {
-    margin: -43px 0 0 -37px; }
+    margin: -43px 0 0 -37px;
+    display: inline-block; }
     /* line 231, D:/Projects/home/spika/www/css/basics.scss */
     .footer__logo img {
       background-color: #ccc; }
@@ -775,42 +776,37 @@ select, input, textarea {
 .doctor-smallblock {
   text-align: center; }
   /* line 318, D:/Projects/home/spika/www/css/basics.scss */
-  .doctor-smallblock:nth-child(n+7) {
-    margin-top: 44px; }
-  /* line 319, D:/Projects/home/spika/www/css/basics.scss */
-  .doctor-smallblock:nth-child(n+13) {
-    margin-top: 55px; }
-  /* line 320, D:/Projects/home/spika/www/css/basics.scss */
   .doctor-smallblock__image {
     width: 128px;
     height: 128px;
     border-radius: 32px;
     overflow: hidden;
     margin: auto; }
-    /* line 321, D:/Projects/home/spika/www/css/basics.scss */
+    /* line 319, D:/Projects/home/spika/www/css/basics.scss */
     .doctor-smallblock__image img {
-      width: 100%;
-      height: 100%;
+      min-width: 100%;
+      min-height: 100%;
       object-fit: cover;
-      background-color: #ccc; }
-  /* line 323, D:/Projects/home/spika/www/css/basics.scss */
+      background-color: #ccc;
+      width: 0; }
+  /* line 321, D:/Projects/home/spika/www/css/basics.scss */
   .doctor-smallblock__name {
     font-size: 16px;
     font-weight: 600;
     color: #8e99a8;
     margin-top: 23px; }
-  /* line 324, D:/Projects/home/spika/www/css/basics.scss */
+  /* line 322, D:/Projects/home/spika/www/css/basics.scss */
   .doctor-smallblock__info, .doctor-smallblock__list, .doctor-smallblock__link {
     font-size: 14px;
     color: #8e99a8;
     line-height: 1.5em; }
-  /* line 325, D:/Projects/home/spika/www/css/basics.scss */
+  /* line 323, D:/Projects/home/spika/www/css/basics.scss */
   .doctor-smallblock__info {
     margin-top: 10px; }
-  /* line 326, D:/Projects/home/spika/www/css/basics.scss */
+  /* line 324, D:/Projects/home/spika/www/css/basics.scss */
   .doctor-smallblock__link {
     text-decoration: underline; }
-    /* line 327, D:/Projects/home/spika/www/css/basics.scss */
+    /* line 325, D:/Projects/home/spika/www/css/basics.scss */
     .doctor-smallblock__link:hover {
       opacity: 0.7; }
 
@@ -846,7 +842,10 @@ select, input, textarea {
   justify-content: space-between; }
   /* line 18, D:/Projects/home/spika/www/css/default.scss */
   .doctors-list .doctor-smallblock {
-    width: 16.6666%; }
+    width: 16.6666%;
+    margin-top: 50px;
+    box-sizing: border-box;
+    padding: 0 10px; }
 
 /* line 22, D:/Projects/home/spika/www/css/default.scss */
 .sales-page .action-blocks-list {
@@ -877,17 +876,17 @@ select, input, textarea {
 /* line 38, D:/Projects/home/spika/www/css/default.scss */
 .page-doctors .main-content {
   margin-top: 25px;
-  padding-bottom: 90px; }
+  padding-bottom: 98px; }
 
 /* line 39, D:/Projects/home/spika/www/css/default.scss */
 .page-doctors .doctors-list {
-  margin-top: 41px;
+  margin-top: -9px;
   padding: 0 63px; }
 
 /* ####################### */
 /* Всплывающие окна и пр. */
 /* ####################### */
-/* line 50, D:/Projects/home/spika/www/css/default.scss */
+/* line 52, D:/Projects/home/spika/www/css/default.scss */
 .popup {
   display: none; }
 

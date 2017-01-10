@@ -42,11 +42,11 @@
         <!-- // Переключатели контента -->
         
         <!-- Список врачей -->
-        <ul class="doctors-list"> <!-- default.scss -->
-            <li class="doctor-smallblock"> <!-- basics.scss -->
+        <ul class="doctors-list">
+            <li class="doctor-smallblock">
             	<div class="doctor-smallblock__image"><img src="" alt=""></div>
             	<p class="doctor-smallblock__name">Дмитрий Штольц</p>
-                <p class="doctor-smallblock__info">Опыт работы: 10 лет</p> <!-- Поскольку здесь, у списка ниже и у ссылки стили одинаковые (кроме подчеркивания у ссылки), надо через запятую им задать одинаковый стиль. Т.е. .doctor-smallblock__info, .doctor-smallblock__list, .doctor-smallblock__link {стили} -->
+                <p class="doctor-smallblock__info">Опыт работы: 10 лет</p>
                 <ul class="doctor-smallblock__list">
                     <li>Ботулинотерапия</li>
                     <li>Контурная пластика</li>

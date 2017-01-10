@@ -14,6 +14,10 @@
     .service-block {width: 49.3%;}
 }
 
+.doctors-list {display: flex; flex-wrap: wrap; justify-content: space-between;
+    .doctor-smallblock {width: 16.6666%;}
+}
+
 .sales-page {
     .action-blocks-list {margin-top: 54px;}
     .main-content {padding-bottom: 58px;}
@@ -29,7 +33,11 @@
 	.main-content {margin-top: 92px; padding-bottom: 65px;}
 }
 
-
+.page-doctors {
+	.page-heading {margin-top: 52px;}
+	.main-content {margin-top: 25px; padding-bottom: 90px;}
+	.doctors-list {margin-top: 41px; padding: 0 63px;}
+}
 
 
 /* ####################### */

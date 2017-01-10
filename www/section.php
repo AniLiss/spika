@@ -32,12 +32,12 @@
     <div class="container">
         
         <!-- Список услуг -->
-        <ul class="service-list"><!-- Это в default. Отступы аналогично делаешь, как я  делал в sales.php, т.е. прописываешь внутри .page-section -->
-        	<li class="service-block"> <!-- Это в basics. Глянь блок, у которого ховер показан (где кнопку видно). Там у блока тень появляется -->
-        		<p class="smalltitle service-block__heading">Ботулинотерапия</p> <!-- Судя по макету, у заголовка есть min-height, равный 2 строкам. У нас в данном случае line-height:(24/20)*1em; Значит, min-height:(24/20)*2em. Уловил?  -->
+        <ul class="service-list">
+        	<li class="service-block">
+        		<p class="smalltitle service-block__heading">Ботулинотерапия</p>
         		<p class="service-block__text">Мимические морщины появляются на лице уже в молодости, являясь следствием активной мимики. Затем, по прошествии времени, снижается тургор кожи, и вместо мелких мимических морщин появляются глубокие и заметные, которые видно, даже когда лицо находится в покое.</p>
-                <a href="#" class="button">Подробнее</a> <!-- Кнопка появляется на ховере -->
-        		<div class="service-block__img"><img src="" alt=""></div> <!-- Картинка находится в контейнере, имеет position:absolute; left:0; top:0; object-fit:cover; min-width:100%; min-height:100%; width:0. У контейнера overflow:hidden, ну и тоже абсолютное позиционирование. -->
+                <a href="#" class="button">Подробнее</a>
+        		<div class="service-block__img"><img src="" alt=""></div>
         	</li>
         	<li class="service-block">
         		<p class="smalltitle service-block__heading">Контурная пластика</p>
@@ -46,7 +46,8 @@
         		<div class="service-block__img"><img src="" alt=""></div>
         	</li>
         	<li class="service-block">
-        		<p class="smalltitle service-block__heading">Биоревитализация гиалуроновой кислотой</p>
+        		<p class="smalltitle service-block__heading">Биоревитализация<br>
+        		гиалуроновой кислотой</p>
         		<p class="service-block__text">Гиалуроновая кислота – вещество, обладающее уникальной способностью увлажнять кожу и возвращать ей молодость. Именно поэтому ее используют для биоревитализации – процедуры, направленной на глубокое увлажнение кожи.</p>
         		<a href="#" class="button">Подробнее</a>
         		<div class="service-block__img"><img src="" alt=""></div>

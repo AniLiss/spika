@@ -10,6 +10,10 @@
     .action-block {width: 49.3%;}
 }
 
+.service-list {display: flex; flex-wrap: wrap; justify-content: space-between;
+    .service-block {width: 49.3%;}
+}
+
 .sales-page {
     .action-blocks-list {margin-top: 54px;}
     .main-content {padding-bottom: 58px;}
@@ -21,7 +25,9 @@
 	//.page-content-padding {padding-right: 74px;} Пока под вопросом
 }
 
-
+.page-section {
+	.main-content {margin-top: 92px; padding-bottom: 65px;}
+}
 
 
 

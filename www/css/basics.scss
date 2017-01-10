@@ -70,7 +70,7 @@ input:-webkit-autofill:active {
 
 html {width:100%; min-height:100%}
 body {width:100%; min-height:100%; font-size:0; font-family: $lato;}
-html, body {overflow-x: hidden;}
+html, body {min-width: 1440px;}
 header, section, footer, main {width:100%; float:left; clear:left;}
 .container {width:1210px; margin:0 auto;
     &_big {width:1290px}
@@ -294,5 +294,21 @@ select, input, textarea {padding: 10px; text-align: left; margin: 0; padding:0; 
 	}
 	&_lightgold {background-color: #f1e9d2;
 		.action-block__heading {color: #4a414b;}
+	}
+}
+
+/* ####################### */
+
+.service-block {min-height: 278px; position: relative; border-radius: 36px; border: solid 1px #c9caca; box-sizing: border-box; padding: 27px 25px 19px; overflow: hidden; transition: all 0.25s ease-in-out; cursor: pointer; display: flex; flex-direction: column;
+	&:nth-child(n+3) {margin-top: 24px;}
+	&:hover {box-shadow: 0 29px 35px -20px rgba(0, 0, 0, 0.1);
+		.button {opacity: 1; pointer-events: all;}
+	}
+	&__heading, &__text {max-width: 60.7%;}
+	&__heading {min-height: (24/20)*2em;}
+	&__text {font-size: 15px; color: #4b4b4b; line-height: 1.25em; margin-top: 2px; flex: 1;}
+	.button {opacity: 0; pointer-events: none; border: solid 2px #1d8dd3; width: 200px; letter-spacing: 0.02em; height: 35px; line-height: 35px;}
+	&__img {position: absolute; top: 0; right: 0; height: 100%; width: 37.5%; overflow: hidden;
+		img {position: absolute; left: 0; top: 0; object-fit: cover; min-width: 100%; min-height: 100%; width: 0; background-color: #ccc;}
 	}
 }

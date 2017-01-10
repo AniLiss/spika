@@ -15,7 +15,7 @@
 }
 
 .doctors-list {display: flex; flex-wrap: wrap; justify-content: space-between;
-    .doctor-smallblock {width: 16.6666%;}
+    .doctor-smallblock {width: 16.6666%; margin-top:50px; box-sizing:border-box; padding:0 10px}
 }
 
 .sales-page {
@@ -35,8 +35,8 @@
 
 .page-doctors {
 	.page-heading {margin-top: 52px;}
-	.main-content {margin-top: 25px; padding-bottom: 90px;}
-	.doctors-list {margin-top: 41px; padding: 0 63px;}
+	.main-content {margin-top: 25px; padding-bottom: 98px;}
+	.doctors-list {margin-top: -9px; padding: 0 63px;}
 }
 
 .page-patients {
@@ -48,6 +48,8 @@
 	.page-content-padding {padding-left: 117px; margin-top: 58px;}
 	.columns__maintext {text-indent: 0; line-height: 1.35em;}
 }
+
+
 
 
 

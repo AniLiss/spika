@@ -9,7 +9,7 @@
     <?php include "blocks/css.php"; ?>
 </head>
 
-<body> 
+<body class="page-patients"> 
 
 <?php include "blocks/header.php"; ?>
 
@@ -30,11 +30,14 @@
 <main class="main-content patients">
     <div class="container">
     	
-    	<!-- Блок с картинкой -->
-        <div class="image-block">
-            <img src="" alt="">
+    	<!-- Текстовый блок с картинкой -->
+        <div class="text-image-block text-image-block_notext text-image-block_fullbg"><!-- .text-image-block_fullbg - еще одна вариация блока. Эта отвечает за блок, у которого картинка ПОЛНОСТЬЮ заполняет блок. У картинки будет left:0; top:0; object-fit:cover; min-width:100%; min-height:100%; width:0; max-height:auto -->
+            <p class="text-image-block__heading"></p>
+            <p class="text-image-block__text"></p>
+            <div class="text-image-block__buttons"></div>
+            <img src="img/imageblock/example.png" alt="@@" class="text-image-block__bgimage">
         </div>  
-        <!-- // Блок с картинкой --> 
+        <!-- // Текстовый блок с картинкой -->
     	
     	<!-- Переключатели контента -->
         <ul class="content-changer">

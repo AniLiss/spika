@@ -9,7 +9,7 @@
     <?php include "blocks/css.php"; ?>
 </head>
 
-<body> 
+<body class="sale-info-page"> <!-- Этот класс используешь, чтобы задать отступы блокам на этой странице. Для примера смотри sales.php и default.scss, как я там сделал. Для КАЖДОЙ страницы такой класс будет уникальным --> 
 
 <?php include "blocks/header.php"; ?>
 
@@ -32,11 +32,11 @@
     <div class="container">
     	
     	<!-- Текстовый блок с картинкой -->
-        <div class="text-image-block text-image-block_notext"> <!-- надо добавить вариацию блока _notext в basics.scss. Она определяет стиль блока в том случае, если нет текста (выравнивает картинку по центру) -->
+        <div class="text-image-block text-image-block_notext"> <!-- надо добавить вариацию блока _notext в basics.scss. Она будет определять стиль блока в том случае, если нет текста (выравнивает картинку по центру) и скрывает текстовые блоки. НО в самой разметке текстовые блоки должны остаться, просто они пустые (это для админки надо) -->
             <p class="text-image-block__heading"></p>
             <p class="text-image-block__text"></p>
             <div class="text-image-block__buttons"></div>
-            <img src="img/imageblock/example.png" alt="@@" class="text-image-block__bgimage"> <!-- У картинки  -->
+            <img src="img/imageblock/example.png" alt="@@" class="text-image-block__bgimage">
         </div>  
         <!-- // Текстовый блок с картинкой -->
     	

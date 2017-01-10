@@ -27,7 +27,7 @@
 <!-- // Заголовок + хлебные крошки -->
 
 <!-- Контент страницы  -->
-<main class="main-content">
+<main class="main-content sales">
     <div class="container">
        
         <!-- Переключатели контента -->
@@ -37,6 +37,7 @@
         </ul>
         <!-- // Переключатели контента -->
         
+        <!-- Список акций -->
         <ul class="sales-list">
         	<li class="sale-payment">
         		<p class="sale-heading">Оплата</p>
@@ -71,6 +72,7 @@
         		<p class="addinfo">1 октября — 29 октября</p>
         	</li>
         </ul>
+        <!-- // Список акций -->
         
     </div>
 </main>

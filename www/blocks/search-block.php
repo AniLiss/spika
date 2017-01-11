@@ -11,3 +11,29 @@
     </div>
 </section>
 <!-- // Поиск -->
+
+<!-- Результат поиска -->
+<section class="search-result" style="display:none;">
+	<div class="container">
+		<div class="search-result__category">
+        	<p class="smalltitle"><a href="#">Инъекционная косметология</a></p>
+            <ul class="blue-links-list">
+                <li><a href="#"><span class="match">Лечение</span> гипергидроза (повышенной потливости)</a></li>
+                <li><a href="#"><span class="match">Лечение</span> болевого симптома при помощи ботулинотерапии</a></li>
+            </ul>
+        </div>
+        <div class="search-result__category">
+        	<p class="smalltitle"><a href="#">Аппаратная косметология</a></p>
+            <ul class="blue-links-list">
+				<li><a href="#"><span class="match">Лечение</span> сосудов и улучшение качества кожи на лазере VBeam Perfecta</a></li>
+            </ul>
+        </div>
+        <div class="search-result__category">
+        	<p class="smalltitle"><a href="#">Трихология</a></p>
+            <ul class="blue-links-list">
+                <li><a href="#"><span class="match">Лечение</span> волос</a></li>
+            </ul>
+        </div>
+	</div>
+</section>
+<!-- // Результат поиска -->

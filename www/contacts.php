@@ -9,7 +9,7 @@
     <?php include "blocks/css.php"; ?>
 </head>
 
-<body> 
+<body class="page-contacts"> 
 
 <?php include "blocks/header.php"; ?>
 
@@ -30,52 +30,54 @@
 <main class="main-content contacts">
     <div class="container">
     	
-    	<!-- Блок с картой -->
-        <div class="map-block">
+    	<!-- Карта -->
+        <div class="text-image-block text-image-block_map"> <!-- Добавляем вариацию с картой -->
         </div>  
-        <!-- // Блок с картой --> 
+        <!-- // Карта --> 
     	
     	<!-- Верхний контент -->
         <div class="columns page-content-padding">
             <div class="columns__third">
                 <p class="smalltitle">Обязательно приходите к нам:</p>
                 <p class="columns__maintext">
-                	<span class="contact">Пироговская набережная., д. 5/2.</span><br><br>
+                	<b>Пироговская набережная., д. 5/2.</b><br><br> <!-- Для жирного начертания используем специально придуманный для этого тег <b>. Ему надо будет задать правильный font-weight -->
                 	Для Вашего удобства для гостей клиники напротив входа в отель «Санкт-Петербург» расположена бесплатная парковка.<br><br>
                 	Так же у нас работает многоканальный номер телефона:<br><br>
-                	<span class="contact">Пироговская набережная., д. 5/2.</span><br><br>
+                	<b>Пироговская набережная., д. 5/2.</b><br><br>
                 	Либо же напишите нам письмо:<br><br>
-                	<span class="contact"><a href="#">hi@spika.clinic</a></span>
+                	<b><a href="#">hi@spika.clinic</a></b>
                 </p>
             </div>
-            <form class="columns__two-of-three" action="send.php" method="post">
+            <div class="columns__two-of-three"><!-- Паддинг справа добавляешь конкретно к этой колонке -->
                 <p class="smalltitle">Напишите нам прямо сейчас:</p>
-                <input type="text" name="name" placeholder="Как вас зовут?">
-                <input type="email" name="email">
-                <p>или номер телефона</p>
-                <input type="tel" name="tel">
-                <textarea name="message" placeholder="Ваше сообщение"></textarea>
-                <button class="button">Отправить</button>
-            </form>
+                <form class="contact-form" action="send.php" method="post"><!-- Этот блок добавляешь в basics.scss. Делаешь через flex с использованием flex-wrap и justify-content: space-between. Стили для инпутов и textarea прописываешь ВНЕ самой формы, рядом с базовыми стилями кнопки. Непосредственно для .contact-form ты задаешь только ширину инпутов, textarea, блока "или номер телефона". Отступы сверху и снизу между инпутами задаешь через структуры типа input+input {margin-top:10px}, textarea+.button {margin-top:10px} и т.д. Это тоже БАЗОВЫЕ стили, вне формы  -->
+                    <input type="text" name="name" placeholder="Как вас зовут?">
+                    <input type="email" name="email" placeholder="Укажите тут вашу почту">
+                    <p>или номер телефона</p><!-- В макете этот блок чуть ближе к номеру телефона, чем к почте, но ты можешь расположить ровно между ними -->
+                    <input type="tel" name="tel" placeholder="+7 (___) ___ - __ - __"><!-- В скриптах подкорректируй маску, добавь пробелы слева и справа от тире -->
+                    <textarea name="message" placeholder="Ваше сообщение"></textarea><!-- resize:none -->
+                    <button class="button">Отправить</button>
+                </form>
+            </div>
         </div>
         <!-- // Верхний контент -->
         
         <!-- Нижний контент -->
         <div class="columns page-content-padding">
-            <div class="columns__one">
+            <div class="columns__one">    
                 <p class="smalltitle">Как еще к нам можно проехать:</p>
-                <div class="path">
-                	<p>Проезд со стороны Литейного проезда</p>
-                	<img src="" alt="">
-                </div>
-                <div class="path">
-                	<p>Проезд со стороны м. «Горьковская»</p>
-                	<img src="" alt="">
-                </div>
-                <div class="path">
-                	<p>Проезд со стороны м. «Чёрная речка»</p>
-                	<img src="" alt="">
-                </div>
+            </div>
+            <div class="columns__third">
+                <p class="columns__maintext"><b>Проезд со стороны Литейного проезда</b></p>
+                <a href="#" class="image-map-link"><img src="" alt=""></a>
+            </div>
+            <div class="columns__third">
+                <p class="columns__maintext"><b>Проезд со стороны м. «Горьковская»</b></p>
+                <a href="#" class="image-map-link"><img src="" alt=""></a>
+            </div>
+            <div class="columns__third">
+                <p class="columns__maintext"><b>Проезд со стороны м. «Чёрная речка»</b></p>
+                <a href="#" class="image-map-link"><img src="" alt=""></a>
             </div>
         </div>
         <!-- // Нижний контент -->

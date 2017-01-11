@@ -108,7 +108,19 @@ p {font-size:14px; line-height:1.7em;}
 a,input,button,select,textarea,.button,use {transition:all .2s ease-in-out; box-sizing:border-box;}
 a {text-decoration: inherit; font-weight: inherit; line-height:inherit; color:inherit;}
 
-select, input, textarea {padding: 10px; text-align: left; margin: 0; padding:0; border: 0; border-radius:0; font-size: 14px; display:inline-block;}
+select, input, textarea {padding: 10px; text-align: left; margin: 0; padding: 0 27px; border-radius: 1000px; font-size: 15px; display:inline-block; border: 1px solid #979797;}
+
+input {height: 42px; color: #979797;
+	& + input {margin-top: 14px;}
+	& + p {font-size: 15px; margin-top: 22px;
+		& + input {margin-top: 14px;}
+	}
+	& + textarea {margin-top: 13px;}
+}
+
+textarea {resize: none; height: 131px; border-radius: 29px; padding: 17px 27px;
+	& + .button {margin-top: 12px; padding: 0 51px;}
+}
 
 .button {text-align:center; border-radius:1000px; border:1px solid #7eb9ff; padding:0 20px; display:inline-block; color:#3078bf; font-size:14px; height:42px; line-height:40px; background-color: transparent;
     &:hover {background-color:#3078bf; box-shadow: 0 13px 15px 0 rgba(0, 0, 0, 0.06); border-color:#1d8dd3; color:white;}
@@ -206,6 +218,7 @@ select, input, textarea {padding: 10px; text-align: left; margin: 0; padding:0; 
 	&_fullbg {
 		img {left: 0; top: 0; object-fit: cover; min-width: 100%; min-height: 100%; width: 0; max-height: auto;}
 	}
+	&_map {height: 586px; padding: 0;}
 }
 
 /* ####################### */
@@ -329,3 +342,16 @@ select, input, textarea {padding: 10px; text-align: left; margin: 0; padding:0; 
 		&:hover {opacity: 0.7;}
 	}
 }
+
+/* ####################### */
+
+.contact-form {display: flex; flex-wrap: wrap; justify-content: space-between; text-align: right;
+	input, textarea {width: 100%;}
+	input[type="email"] {width: 41.7%;}
+	input[type="tel"] {width: 30%;}
+	.button {position: relative; left: 100%; transform: translateX(-100%);}
+}
+
+/* ####################### */
+
+.image-map-link {display: block; height: 285px; border-radius: 6px; background-color: #ccc;}

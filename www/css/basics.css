@@ -178,13 +178,42 @@ select, input, textarea {
   padding: 10px;
   text-align: left;
   margin: 0;
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  font-size: 14px;
-  display: inline-block; }
+  padding: 0 27px;
+  border-radius: 1000px;
+  font-size: 15px;
+  display: inline-block;
+  border: 1px solid #979797; }
 
 /* line 113, C:/wamp64/www/spika/www/css/basics.scss */
+input {
+  height: 42px;
+  color: #979797; }
+  /* line 114, C:/wamp64/www/spika/www/css/basics.scss */
+  input + input {
+    margin-top: 14px; }
+  /* line 115, C:/wamp64/www/spika/www/css/basics.scss */
+  input + p {
+    font-size: 15px;
+    margin-top: 22px; }
+    /* line 116, C:/wamp64/www/spika/www/css/basics.scss */
+    input + p + input {
+      margin-top: 14px; }
+  /* line 118, C:/wamp64/www/spika/www/css/basics.scss */
+  input + textarea {
+    margin-top: 13px; }
+
+/* line 121, C:/wamp64/www/spika/www/css/basics.scss */
+textarea {
+  resize: none;
+  height: 131px;
+  border-radius: 29px;
+  padding: 17px 27px; }
+  /* line 122, C:/wamp64/www/spika/www/css/basics.scss */
+  textarea + .button {
+    margin-top: 12px;
+    padding: 0 51px; }
+
+/* line 125, C:/wamp64/www/spika/www/css/basics.scss */
 .button {
   text-align: center;
   border-radius: 1000px;
@@ -196,20 +225,20 @@ select, input, textarea {
   height: 42px;
   line-height: 40px;
   background-color: transparent; }
-  /* line 114, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 126, C:/wamp64/www/spika/www/css/basics.scss */
   .button:hover {
     background-color: #3078bf;
     box-shadow: 0 13px 15px 0 rgba(0, 0, 0, 0.06);
     border-color: #1d8dd3;
     color: white; }
-  /* line 115, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 127, C:/wamp64/www/spika/www/css/basics.scss */
   .button:active {
     box-shadow: 0 0 0 0 transparent; }
-  /* line 116, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 128, C:/wamp64/www/spika/www/css/basics.scss */
   .button:disabled {
     border-color: #dedede;
     color: #cacaca; }
-  /* line 117, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 129, C:/wamp64/www/spika/www/css/basics.scss */
   .button__big {
     height: 44px;
     line-height: 42px;
@@ -218,34 +247,34 @@ select, input, textarea {
 /* ####################### */
 /* Элементы UI */
 /* ####################### */
-/* line 128, C:/wamp64/www/spika/www/css/basics.scss */
+/* line 140, C:/wamp64/www/spika/www/css/basics.scss */
 .header {
   padding-top: 7px; }
-  /* line 129, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 141, C:/wamp64/www/spika/www/css/basics.scss */
   .header .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-end; }
-  /* line 130, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 142, C:/wamp64/www/spika/www/css/basics.scss */
   .header__logo {
     position: relative;
     bottom: 2px; }
-    /* line 131, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 143, C:/wamp64/www/spika/www/css/basics.scss */
     .header__logo img {
       background-color: #ccc; }
-  /* line 133, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 145, C:/wamp64/www/spika/www/css/basics.scss */
   .header__menu {
     margin: 0 20px;
     margin-bottom: 34px; }
-    /* line 134, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 146, C:/wamp64/www/spika/www/css/basics.scss */
     .header__menu li {
       display: inline-block;
       vertical-align: middle;
       margin-right: 28px; }
-      /* line 135, C:/wamp64/www/spika/www/css/basics.scss */
+      /* line 147, C:/wamp64/www/spika/www/css/basics.scss */
       .header__menu li:last-child {
         margin-right: 0; }
-    /* line 137, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 149, C:/wamp64/www/spika/www/css/basics.scss */
     .header__menu a {
       line-height: 1.21429em;
       font-size: 14px;
@@ -253,40 +282,40 @@ select, input, textarea {
       letter-spacing: 0.026em;
       color: #2c7cc3;
       text-transform: uppercase; }
-      /* line 138, C:/wamp64/www/spika/www/css/basics.scss */
+      /* line 150, C:/wamp64/www/spika/www/css/basics.scss */
       .header__menu a:hover {
         color: #5f98da; }
-        /* line 139, C:/wamp64/www/spika/www/css/basics.scss */
+        /* line 151, C:/wamp64/www/spika/www/css/basics.scss */
         .header__menu a:hover use {
           fill: #5f98da; }
-      /* line 141, C:/wamp64/www/spika/www/css/basics.scss */
+      /* line 153, C:/wamp64/www/spika/www/css/basics.scss */
       .header__menu a use {
         fill: #1893D3; }
-      /* line 142, C:/wamp64/www/spika/www/css/basics.scss */
+      /* line 154, C:/wamp64/www/spika/www/css/basics.scss */
       .header__menu a svg {
         vertical-align: middle;
         margin-bottom: 2px; }
-  /* line 145, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 157, C:/wamp64/www/spika/www/css/basics.scss */
   .header__infoblock {
     text-align: right; }
-  /* line 147, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 159, C:/wamp64/www/spika/www/css/basics.scss */
   .header__social li {
     display: inline-block;
     vertical-align: middle;
     margin-left: 15px; }
-  /* line 148, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 160, C:/wamp64/www/spika/www/css/basics.scss */
   .header__social use {
     fill: #2b79be; }
-  /* line 149, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 161, C:/wamp64/www/spika/www/css/basics.scss */
   .header__social a:hover use {
     fill: #5f98da; }
-  /* line 151, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 163, C:/wamp64/www/spika/www/css/basics.scss */
   .header__social .green-eye-icon use {
     fill: #80be2b; }
-  /* line 152, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 164, C:/wamp64/www/spika/www/css/basics.scss */
   .header__social .green-eye-icon:hover use {
     fill: #99d647; }
-  /* line 155, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 167, C:/wamp64/www/spika/www/css/basics.scss */
   .header__contacts {
     line-height: 1.21429em;
     font-size: 14px;
@@ -295,27 +324,27 @@ select, input, textarea {
     margin-top: 16px; }
 
 /* ####################### */
-/* line 160, C:/wamp64/www/spika/www/css/basics.scss */
+/* line 172, C:/wamp64/www/spika/www/css/basics.scss */
 .page-heading {
   text-align: center;
   width: 100%;
   margin-top: 22px; }
-  /* line 161, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 173, C:/wamp64/www/spika/www/css/basics.scss */
   .page-heading__container {
     display: inline-block;
     text-align: left; }
-  /* line 162, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 174, C:/wamp64/www/spika/www/css/basics.scss */
   .page-heading__breadcrumbs {
     margin-left: -11px; }
-    /* line 163, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 175, C:/wamp64/www/spika/www/css/basics.scss */
     .page-heading__breadcrumbs li {
       display: inline-block;
       vertical-align: top;
       margin-right: 20px; }
-      /* line 164, C:/wamp64/www/spika/www/css/basics.scss */
+      /* line 176, C:/wamp64/www/spika/www/css/basics.scss */
       .page-heading__breadcrumbs li:last-child {
         margin-right: 0; }
-    /* line 166, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 178, C:/wamp64/www/spika/www/css/basics.scss */
     .page-heading__breadcrumbs a {
       line-height: 1.2em;
       font-size: 20px;
@@ -323,7 +352,7 @@ select, input, textarea {
       display: inline-block;
       position: relative;
       padding-left: 13px; }
-      /* line 167, C:/wamp64/www/spika/www/css/basics.scss */
+      /* line 179, C:/wamp64/www/spika/www/css/basics.scss */
       .page-heading__breadcrumbs a:before {
         position: absolute;
         content: "";
@@ -336,10 +365,10 @@ select, input, textarea {
         margin: auto;
         transition: all .25s ease-in-out;
         transform: translate3d(0, 0, 0); }
-      /* line 168, C:/wamp64/www/spika/www/css/basics.scss */
+      /* line 180, C:/wamp64/www/spika/www/css/basics.scss */
       .page-heading__breadcrumbs a:hover:before {
         transform: translate3d(-5px, 0, 0); }
-  /* line 172, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 184, C:/wamp64/www/spika/www/css/basics.scss */
   .page-heading__heading {
     line-height: 1.2027em;
     font-size: 74px;
@@ -349,17 +378,17 @@ select, input, textarea {
     margin-top: -2px; }
 
 /* ####################### */
-/* line 177, C:/wamp64/www/spika/www/css/basics.scss */
+/* line 189, C:/wamp64/www/spika/www/css/basics.scss */
 .search-block {
   text-align: center;
   margin-top: 8px; }
-  /* line 178, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 190, C:/wamp64/www/spika/www/css/basics.scss */
   .search-block__form {
     width: 680px;
     max-width: 100%;
     display: inline-block;
     position: relative; }
-  /* line 179, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 191, C:/wamp64/www/spika/www/css/basics.scss */
   .search-block__input {
     width: 100%;
     line-height: 52px;
@@ -368,7 +397,7 @@ select, input, textarea {
     box-shadow: inset 0 3px 5px 0 rgba(0, 0, 0, 0.06), 0 18px 50px -20px rgba(0, 0, 0, 0.35);
     font-size: 15px;
     border-radius: 1000px; }
-  /* line 180, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 192, C:/wamp64/www/spika/www/css/basics.scss */
   .search-block__nav {
     position: absolute;
     width: 32px;
@@ -377,7 +406,7 @@ select, input, textarea {
     bottom: 0;
     right: 23px;
     margin: auto; }
-  /* line 181, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 193, C:/wamp64/www/spika/www/css/basics.scss */
   .search-block__start {
     z-index: 1;
     width: 100%;
@@ -387,7 +416,7 @@ select, input, textarea {
     left: 0;
     background-color: #ccc;
     border: 0; }
-  /* line 182, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 194, C:/wamp64/www/spika/www/css/basics.scss */
   .search-block__close {
     z-index: 2;
     position: absolute;
@@ -395,7 +424,7 @@ select, input, textarea {
     left: 0;
     width: 100%;
     height: 100%; }
-    /* line 183, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 195, C:/wamp64/www/spika/www/css/basics.scss */
     .search-block__close img {
       position: absolute;
       top: 0;
@@ -405,7 +434,7 @@ select, input, textarea {
       margin: auto; }
 
 /* ####################### */
-/* line 189, C:/wamp64/www/spika/www/css/basics.scss */
+/* line 201, C:/wamp64/www/spika/www/css/basics.scss */
 .text-image-block {
   overflow: hidden;
   border-radius: 0 56px 56px 56px;
@@ -414,7 +443,7 @@ select, input, textarea {
   box-sizing: border-box;
   background-color: #f0f0f0;
   box-shadow: 0 60px 80px -54px rgba(0, 0, 0, 0.12); }
-  /* line 196, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 208, C:/wamp64/www/spika/www/css/basics.scss */
   .text-image-block__heading {
     font-family: "Muller", "Lato", Arial, sans-serif;
     font-size: 53px;
@@ -423,7 +452,7 @@ select, input, textarea {
     color: #4e7ab5;
     position: relative;
     z-index: 2; }
-  /* line 197, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 209, C:/wamp64/www/spika/www/css/basics.scss */
   .text-image-block__text {
     color: #7c7c7c;
     font-size: 15px;
@@ -431,37 +460,37 @@ select, input, textarea {
     position: relative;
     z-index: 2;
     margin-top: 18px; }
-  /* line 198, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 210, C:/wamp64/www/spika/www/css/basics.scss */
   .text-image-block__buttons {
     display: block;
     position: relative;
     z-index: 2;
     margin-top: 22px; }
-    /* line 199, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 211, C:/wamp64/www/spika/www/css/basics.scss */
     .text-image-block__buttons .button {
       display: inline-block;
       margin-right: 20px;
       min-width: 173px; }
-  /* line 201, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 213, C:/wamp64/www/spika/www/css/basics.scss */
   .text-image-block__bgimage {
     position: absolute;
     right: 0;
     bottom: 0;
     max-height: 100%; }
-  /* line 202, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 214, C:/wamp64/www/spika/www/css/basics.scss */
   .text-image-block_notext {
     height: 586px;
     padding: 0;
     background-color: #fff; }
-    /* line 203, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 215, C:/wamp64/www/spika/www/css/basics.scss */
     .text-image-block_notext p, .text-image-block_notext div {
       margin: 0; }
-    /* line 204, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 216, C:/wamp64/www/spika/www/css/basics.scss */
     .text-image-block_notext img {
       left: 0;
       top: 0;
       margin: auto; }
-  /* line 207, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 219, C:/wamp64/www/spika/www/css/basics.scss */
   .text-image-block_fullbg img {
     left: 0;
     top: 0;
@@ -470,88 +499,92 @@ select, input, textarea {
     min-height: 100%;
     width: 0;
     max-height: auto; }
+  /* line 221, C:/wamp64/www/spika/www/css/basics.scss */
+  .text-image-block_map {
+    height: 586px;
+    padding: 0; }
 
 /* ####################### */
-/* line 213, C:/wamp64/www/spika/www/css/basics.scss */
+/* line 226, C:/wamp64/www/spika/www/css/basics.scss */
 .main-content {
   margin-top: 35px; }
 
 /* ####################### */
-/* line 217, C:/wamp64/www/spika/www/css/basics.scss */
+/* line 230, C:/wamp64/www/spika/www/css/basics.scss */
 .footer {
   background-color: #fafafa;
   padding: 68px 0 32px; }
-  /* line 218, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 231, C:/wamp64/www/spika/www/css/basics.scss */
   .footer .container {
     display: flex;
     justify-content: space-between;
     align-content: flex-start;
     box-sizing: border-box;
     padding: 0 34px; }
-  /* line 219, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 232, C:/wamp64/www/spika/www/css/basics.scss */
   .footer__col {
     margin: 0 15px; }
-    /* line 220, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 233, C:/wamp64/www/spika/www/css/basics.scss */
     .footer__col:first-child {
       margin-left: 0; }
-    /* line 221, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 234, C:/wamp64/www/spika/www/css/basics.scss */
     .footer__col:last-child {
       margin-right: 0; }
-  /* line 223, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 236, C:/wamp64/www/spika/www/css/basics.scss */
   .footer__menu, .footer__contacts {
     font-size: 14px;
     line-height: 1.21429em;
     letter-spacing: 0.02em;
     color: #6e6e6e; }
-  /* line 224, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 237, C:/wamp64/www/spika/www/css/basics.scss */
   .footer__menu a:hover {
     color: #4e7ab5; }
-  /* line 225, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 238, C:/wamp64/www/spika/www/css/basics.scss */
   .footer__agency {
     font-size: 12px;
     line-height: 1.25em;
     letter-spacing: 0.02em;
     color: #86898c; }
-    /* line 226, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 239, C:/wamp64/www/spika/www/css/basics.scss */
     .footer__agency a {
       display: block;
       margin: 11px 0 10px; }
-      /* line 227, C:/wamp64/www/spika/www/css/basics.scss */
+      /* line 240, C:/wamp64/www/spika/www/css/basics.scss */
       .footer__agency a:hover {
         opacity: .7; }
-  /* line 230, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 243, C:/wamp64/www/spika/www/css/basics.scss */
   .footer__contacts a {
     color: #4e7ab5;
     font-weight: 700;
     text-decoration: underline; }
-    /* line 231, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 244, C:/wamp64/www/spika/www/css/basics.scss */
     .footer__contacts a:hover {
       color: #5f98da; }
-  /* line 233, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 246, C:/wamp64/www/spika/www/css/basics.scss */
   .footer__logo {
     margin: -43px 0 0 -37px;
     display: inline-block; }
-    /* line 234, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 247, C:/wamp64/www/spika/www/css/basics.scss */
     .footer__logo img {
       background-color: #ccc; }
-  /* line 236, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 249, C:/wamp64/www/spika/www/css/basics.scss */
   .footer__social {
     margin-top: 16px; }
-    /* line 237, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 250, C:/wamp64/www/spika/www/css/basics.scss */
     .footer__social li {
       display: inline-block;
       vertical-align: middle;
       margin-right: 25px; }
-      /* line 238, C:/wamp64/www/spika/www/css/basics.scss */
+      /* line 251, C:/wamp64/www/spika/www/css/basics.scss */
       .footer__social li:last-child {
         margin-right: 0; }
-    /* line 240, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 253, C:/wamp64/www/spika/www/css/basics.scss */
     .footer__social use {
       fill: #2b79be; }
-    /* line 241, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 254, C:/wamp64/www/spika/www/css/basics.scss */
     .footer__social a:hover use {
       fill: #5f98da; }
-  /* line 243, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 256, C:/wamp64/www/spika/www/css/basics.scss */
   .footer__copyright {
     font-size: 11px;
     line-height: 1.18182em;
@@ -560,19 +593,19 @@ select, input, textarea {
     margin-top: 13px; }
 
 /* ####################### */
-/* line 248, C:/wamp64/www/spika/www/css/basics.scss */
+/* line 261, C:/wamp64/www/spika/www/css/basics.scss */
 .blue-links-list {
   font-size: 16px;
   color: #3078bf;
   line-height: 1.45em; }
-  /* line 249, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 262, C:/wamp64/www/spika/www/css/basics.scss */
   .blue-links-list a:hover {
     color: #5d9bd8; }
-  /* line 250, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 263, C:/wamp64/www/spika/www/css/basics.scss */
   .blue-links-list li {
     padding-left: 33px;
     position: relative; }
-    /* line 251, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 264, C:/wamp64/www/spika/www/css/basics.scss */
     .blue-links-list li:before {
       content: "•";
       position: absolute;
@@ -580,45 +613,45 @@ select, input, textarea {
       top: 0; }
 
 /* ####################### */
-/* line 257, C:/wamp64/www/spika/www/css/basics.scss */
+/* line 270, C:/wamp64/www/spika/www/css/basics.scss */
 .columns {
   display: flex;
   justify-content: space-between;
   align-content: flex-start; }
-  /* line 258, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 271, C:/wamp64/www/spika/www/css/basics.scss */
   .columns__third {
     width: 27.5%; }
-  /* line 259, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 272, C:/wamp64/www/spika/www/css/basics.scss */
   .columns__two-of-three {
     width: 63.75%; }
-  /* line 260, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 273, C:/wamp64/www/spika/www/css/basics.scss */
   .columns__one {
     width: 100%; }
-  /* line 261, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 274, C:/wamp64/www/spika/www/css/basics.scss */
   .columns__two {
     width: 45.625%; }
-  /* line 262, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 275, C:/wamp64/www/spika/www/css/basics.scss */
   .columns__maintext {
     text-indent: 28px;
     font-size: 15px;
     line-height: 1.25em;
     color: #4b4b4b;
     letter-spacing: 0.003em; }
-    /* line 263, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 276, C:/wamp64/www/spika/www/css/basics.scss */
     .columns__maintext + .columns__maintext {
       margin-top: 25px; }
 
 /* ####################### */
-/* line 269, C:/wamp64/www/spika/www/css/basics.scss */
+/* line 282, C:/wamp64/www/spika/www/css/basics.scss */
 .page-content-padding {
   box-sizing: border-box;
   padding-left: 74px; }
 
 /* ####################### */
-/* line 273, C:/wamp64/www/spika/www/css/basics.scss */
+/* line 286, C:/wamp64/www/spika/www/css/basics.scss */
 .content-changer {
   text-align: center; }
-  /* line 274, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 287, C:/wamp64/www/spika/www/css/basics.scss */
   .content-changer li {
     display: inline-block;
     margin-right: 47px;
@@ -631,18 +664,18 @@ select, input, textarea {
     border-bottom: 2px dotted;
     border-color: transparent;
     cursor: pointer; }
-    /* line 275, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 288, C:/wamp64/www/spika/www/css/basics.scss */
     .content-changer li.active {
       border-color: inherit; }
-    /* line 276, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 289, C:/wamp64/www/spika/www/css/basics.scss */
     .content-changer li:hover {
       color: #5d9bd8; }
-    /* line 277, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 290, C:/wamp64/www/spika/www/css/basics.scss */
     .content-changer li:last-child {
       margin-right: 0; }
 
 /* ####################### */
-/* line 283, C:/wamp64/www/spika/www/css/basics.scss */
+/* line 296, C:/wamp64/www/spika/www/css/basics.scss */
 .action-block {
   min-height: 214px;
   display: flex;
@@ -654,36 +687,36 @@ select, input, textarea {
   padding: 16px 16px 23px 16px;
   overflow: hidden;
   box-shadow: 0 29px 35px -20px rgba(0, 0, 0, 0.1); }
-  /* line 284, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 297, C:/wamp64/www/spika/www/css/basics.scss */
   .action-block:nth-child(n+3) {
     margin-top: 28px; }
-  /* line 285, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 298, C:/wamp64/www/spika/www/css/basics.scss */
   .action-block__heading, .action-block__text, .action-block__bottominfo {
     position: relative;
     z-index: 2;
     max-width: 58%; }
-  /* line 286, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 299, C:/wamp64/www/spika/www/css/basics.scss */
   .action-block__heading {
     font-size: 46px;
     font-weight: 300;
     color: #4e7ab5; }
-  /* line 287, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 300, C:/wamp64/www/spika/www/css/basics.scss */
   .action-block__text {
     flex: 1;
     font-size: 15px;
     color: #7c7c7c;
     line-height: 1.25em;
     margin-top: 15px; }
-  /* line 288, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 301, C:/wamp64/www/spika/www/css/basics.scss */
   .action-block__bottominfo {
     font-size: 11px;
     color: #86898c;
     padding-left: 3px;
     letter-spacing: 0.02em; }
-    /* line 289, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 302, C:/wamp64/www/spika/www/css/basics.scss */
     .action-block__bottominfo a:hover {
       opacity: 0.7; }
-  /* line 291, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 304, C:/wamp64/www/spika/www/css/basics.scss */
   .action-block__image {
     position: absolute;
     top: 0px;
@@ -694,28 +727,28 @@ select, input, textarea {
     max-width: 80%;
     background-color: #ccc;
     z-index: 1; }
-    /* line 292, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 305, C:/wamp64/www/spika/www/css/basics.scss */
     .action-block__image_bg {
       height: 100%;
       max-height: 100%;
       max-width: initial;
       top: 0;
       right: 0; }
-  /* line 295, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 308, C:/wamp64/www/spika/www/css/basics.scss */
   .action-block_lightblue {
     background-color: #eaeaec; }
-    /* line 296, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 309, C:/wamp64/www/spika/www/css/basics.scss */
     .action-block_lightblue .action-block__heading {
       color: #4a414b; }
-  /* line 298, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 311, C:/wamp64/www/spika/www/css/basics.scss */
   .action-block_lightgold {
     background-color: #f1e9d2; }
-    /* line 299, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 312, C:/wamp64/www/spika/www/css/basics.scss */
     .action-block_lightgold .action-block__heading {
       color: #4a414b; }
 
 /* ####################### */
-/* line 305, C:/wamp64/www/spika/www/css/basics.scss */
+/* line 318, C:/wamp64/www/spika/www/css/basics.scss */
 .service-block {
   min-height: 278px;
   position: relative;
@@ -728,30 +761,30 @@ select, input, textarea {
   cursor: pointer;
   display: flex;
   flex-direction: column; }
-  /* line 306, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 319, C:/wamp64/www/spika/www/css/basics.scss */
   .service-block:nth-child(n+3) {
     margin-top: 24px; }
-  /* line 307, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 320, C:/wamp64/www/spika/www/css/basics.scss */
   .service-block:hover {
     box-shadow: 0 29px 35px -20px rgba(0, 0, 0, 0.1); }
-    /* line 308, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 321, C:/wamp64/www/spika/www/css/basics.scss */
     .service-block:hover .button {
       opacity: 1;
       pointer-events: all; }
-  /* line 310, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 323, C:/wamp64/www/spika/www/css/basics.scss */
   .service-block__heading, .service-block__text {
     max-width: 60.7%; }
-  /* line 311, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 324, C:/wamp64/www/spika/www/css/basics.scss */
   .service-block__heading {
     min-height: 2.4em; }
-  /* line 312, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 325, C:/wamp64/www/spika/www/css/basics.scss */
   .service-block__text {
     font-size: 15px;
     color: #4b4b4b;
     line-height: 1.25em;
     margin-top: 2px;
     flex: 1; }
-  /* line 313, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 326, C:/wamp64/www/spika/www/css/basics.scss */
   .service-block .button {
     opacity: 0;
     pointer-events: none;
@@ -760,7 +793,7 @@ select, input, textarea {
     letter-spacing: 0.02em;
     height: 35px;
     line-height: 35px; }
-  /* line 314, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 327, C:/wamp64/www/spika/www/css/basics.scss */
   .service-block__img {
     position: absolute;
     top: 0;
@@ -768,7 +801,7 @@ select, input, textarea {
     height: 100%;
     width: 37.5%;
     overflow: hidden; }
-    /* line 315, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 328, C:/wamp64/www/spika/www/css/basics.scss */
     .service-block__img img {
       position: absolute;
       left: 0;
@@ -780,42 +813,72 @@ select, input, textarea {
       background-color: #ccc; }
 
 /* ####################### */
-/* line 321, C:/wamp64/www/spika/www/css/basics.scss */
+/* line 334, C:/wamp64/www/spika/www/css/basics.scss */
 .doctor-smallblock {
   text-align: center; }
-  /* line 322, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 335, C:/wamp64/www/spika/www/css/basics.scss */
   .doctor-smallblock__image {
     width: 128px;
     height: 128px;
     border-radius: 32px;
     overflow: hidden;
     margin: auto; }
-    /* line 323, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 336, C:/wamp64/www/spika/www/css/basics.scss */
     .doctor-smallblock__image img {
       min-width: 100%;
       min-height: 100%;
       object-fit: cover;
       background-color: #ccc;
       width: 0; }
-  /* line 325, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 338, C:/wamp64/www/spika/www/css/basics.scss */
   .doctor-smallblock__name {
     font-size: 16px;
     font-weight: 600;
     color: #8e99a8;
     margin-top: 23px; }
-  /* line 326, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 339, C:/wamp64/www/spika/www/css/basics.scss */
   .doctor-smallblock__info, .doctor-smallblock__list, .doctor-smallblock__link {
     font-size: 14px;
     color: #8e99a8;
     line-height: 1.5em; }
-  /* line 327, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 340, C:/wamp64/www/spika/www/css/basics.scss */
   .doctor-smallblock__info {
     margin-top: 10px; }
-  /* line 328, C:/wamp64/www/spika/www/css/basics.scss */
+  /* line 341, C:/wamp64/www/spika/www/css/basics.scss */
   .doctor-smallblock__link {
     text-decoration: underline; }
-    /* line 329, C:/wamp64/www/spika/www/css/basics.scss */
+    /* line 342, C:/wamp64/www/spika/www/css/basics.scss */
     .doctor-smallblock__link:hover {
       opacity: 0.7; }
+
+/* ####################### */
+/* line 348, C:/wamp64/www/spika/www/css/basics.scss */
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: right; }
+  /* line 349, C:/wamp64/www/spika/www/css/basics.scss */
+  .contact-form input, .contact-form textarea {
+    width: 100%; }
+  /* line 350, C:/wamp64/www/spika/www/css/basics.scss */
+  .contact-form input[type="email"] {
+    width: 41.7%; }
+  /* line 351, C:/wamp64/www/spika/www/css/basics.scss */
+  .contact-form input[type="tel"] {
+    width: 30%; }
+  /* line 352, C:/wamp64/www/spika/www/css/basics.scss */
+  .contact-form .button {
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%); }
+
+/* ####################### */
+/* line 357, C:/wamp64/www/spika/www/css/basics.scss */
+.image-map-link {
+  display: block;
+  height: 285px;
+  border-radius: 6px;
+  background-color: #ccc; }
 
 /*# sourceMappingURL=basics.css.map */

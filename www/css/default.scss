@@ -49,7 +49,19 @@
 	.columns__maintext {text-indent: 0; line-height: 1.35em;}
 }
 
-
+.page-contacts {
+	.page-heading {margin-top: 81px;}
+	.main-content {margin-top: 16px; padding-bottom: 55px;}
+	.columns__maintext {text-indent: 0;}
+	.page-content-padding {flex-wrap: wrap; margin-top: 127px; padding-left: 82px;
+		& + .page-content-padding {margin-top: 63px; padding-right: 35px;
+			.columns__third {margin-top: 33px; width: 28.6%;}
+		}
+	}
+	.columns__two-of-three {width: 64.3%; padding-right: 64px; box-sizing: border-box;}
+	.contact-form {margin-top: 31px;}
+	.image-map-link {margin-top: 20px;}
+}
 
 
 

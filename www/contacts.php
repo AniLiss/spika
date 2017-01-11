@@ -27,11 +27,11 @@
 <!-- // Заголовок + хлебные крошки -->
 
 <!-- Контент страницы  -->
-<main class="main-content contacts">
+<main class="main-content">
     <div class="container">
     	
     	<!-- Карта -->
-        <div class="text-image-block text-image-block_map"> <!-- Добавляем вариацию с картой -->
+        <div class="text-image-block text-image-block_map">
         </div>  
         <!-- // Карта --> 
     	
@@ -39,23 +39,21 @@
         <div class="columns page-content-padding">
             <div class="columns__third">
                 <p class="smalltitle">Обязательно приходите к нам:</p>
-                <p class="columns__maintext">
-                	<b>Пироговская набережная., д. 5/2.</b><br><br> <!-- Для жирного начертания используем специально придуманный для этого тег <b>. Ему надо будет задать правильный font-weight -->
-                	Для Вашего удобства для гостей клиники напротив входа в отель «Санкт-Петербург» расположена бесплатная парковка.<br><br>
-                	Так же у нас работает многоканальный номер телефона:<br><br>
-                	<b>Пироговская набережная., д. 5/2.</b><br><br>
-                	Либо же напишите нам письмо:<br><br>
-                	<b><a href="#">hi@spika.clinic</a></b>
-                </p>
+				<p class="columns__maintext"><b>Пироговская набережная., д. 5/2.</b></p>
+               	<p class="columns__maintext">Для Вашего удобства для гостей клиники напротив входа в отель «Санкт-Петербург» расположена бесплатная парковка.</p>
+               	<p class="columns__maintext">Так же у нас работает многоканальный номер телефона:</p>
+               	<p class="columns__maintext"><b>8 (812) 403-02-01</b></p>
+               	<p class="columns__maintext">Либо же напишите нам письмо:</p>
+               	<p class="columns__maintext"><b><a href="#">hi@spika.clinic</a></b></p>
             </div>
-            <div class="columns__two-of-three"><!-- Паддинг справа добавляешь конкретно к этой колонке -->
+            <div class="columns__two-of-three">
                 <p class="smalltitle">Напишите нам прямо сейчас:</p>
-                <form class="contact-form" action="send.php" method="post"><!-- Этот блок добавляешь в basics.scss. Делаешь через flex с использованием flex-wrap и justify-content: space-between. Стили для инпутов и textarea прописываешь ВНЕ самой формы, рядом с базовыми стилями кнопки. Непосредственно для .contact-form ты задаешь только ширину инпутов, textarea, блока "или номер телефона". Отступы сверху и снизу между инпутами задаешь через структуры типа input+input {margin-top:10px}, textarea+.button {margin-top:10px} и т.д. Это тоже БАЗОВЫЕ стили, вне формы  -->
+                <form class="contact-form" action="send.php" method="post">
                     <input type="text" name="name" placeholder="Как вас зовут?">
                     <input type="email" name="email" placeholder="Укажите тут вашу почту">
-                    <p>или номер телефона</p><!-- В макете этот блок чуть ближе к номеру телефона, чем к почте, но ты можешь расположить ровно между ними -->
-                    <input type="tel" name="tel" placeholder="+7 (___) ___ - __ - __"><!-- В скриптах подкорректируй маску, добавь пробелы слева и справа от тире -->
-                    <textarea name="message" placeholder="Ваше сообщение"></textarea><!-- resize:none -->
+                    <p>или номер телефона</p>
+                    <input type="tel" name="tel">
+                    <textarea name="message" placeholder="Ваше сообщение"></textarea>
                     <button class="button">Отправить</button>
                 </form>
             </div>

@@ -28,18 +28,27 @@
 
 <!-- Контент страницы  -->
 <main class="main-content">
+    <div class="top-slider-container"><!-- Во всю ширину страницы -->
+        
+        <aside class="top-slider-container__nav"><!-- position:absolute; width:100%; top:50%; -->
+            <!-- Тут будет HTML для навигации -->
+        </aside>
+       
+        <div class="container">
+           <!-- Слайдер -->
+            <div class="text-image-block text-image-block_image-slider"><!-- Это у нас превращается в слайдер (слева и справа от него - перключалки) -->
+                <div class="text-image-block__slider-wrapper">
+                    <div class="text-image-block__slide"><img src="img/imageblock/example.png" alt="@@" class="text-image-block__bgimage"></div>
+                    <div class="text-image-block__slide"><img src="img/imageblock/example.png" alt="@@" class="text-image-block__bgimage"></div>
+                    <div class="text-image-block__slide"><img src="img/imageblock/example.png" alt="@@" class="text-image-block__bgimage"></div>
+                    <div class="text-image-block__slide"><img src="img/imageblock/example.png" alt="@@" class="text-image-block__bgimage"></div>
+                </div>
+            </div>  
+            <!-- // Слайдер -->
+        </div>
+    </div>
+   
     <div class="container">
-    	
-    	<!-- Слайдер -->
-        <div class="text-image-block text-image-block_image-slider"><!-- Это у нас превращается в слайдер (слева и справа от него - перключалки) -->
-            <div class="text-image-block__slider-wrapper">
-                <div class="text-image-block__slide"><img src="img/imageblock/example.png" alt="@@" class="text-image-block__bgimage"></div>
-                <div class="text-image-block__slide"><img src="img/imageblock/example.png" alt="@@" class="text-image-block__bgimage"></div>
-                <div class="text-image-block__slide"><img src="img/imageblock/example.png" alt="@@" class="text-image-block__bgimage"></div>
-                <div class="text-image-block__slide"><img src="img/imageblock/example.png" alt="@@" class="text-image-block__bgimage"></div>
-            </div>
-        </div>  
-        <!-- // Слайдер -->
     	
     	<!-- Переключатели контента -->
         <ul class="content-changer">

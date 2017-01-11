@@ -9,7 +9,7 @@
     <?php include "blocks/css.php"; ?>
 </head>
 
-<body> 
+<body class="page-about"> 
 
 <?php include "blocks/header.php"; ?>
 
@@ -27,14 +27,19 @@
 <!-- // Заголовок + хлебные крошки -->
 
 <!-- Контент страницы  -->
-<main class="main-content about">
+<main class="main-content">
     <div class="container">
     	
-    	<!-- Блок с картинкой -->
-        <div class="image-block">
-            <img src="" alt="">
+    	<!-- Слайдер -->
+        <div class="text-image-block text-image-block_image-slider"><!-- Это у нас превращается в слайдер (слева и справа от него - перключалки) -->
+            <div class="text-image-block__slider-wrapper">
+                <div class="text-image-block__slide"><img src="img/imageblock/example.png" alt="@@" class="text-image-block__bgimage"></div>
+                <div class="text-image-block__slide"><img src="img/imageblock/example.png" alt="@@" class="text-image-block__bgimage"></div>
+                <div class="text-image-block__slide"><img src="img/imageblock/example.png" alt="@@" class="text-image-block__bgimage"></div>
+                <div class="text-image-block__slide"><img src="img/imageblock/example.png" alt="@@" class="text-image-block__bgimage"></div>
+            </div>
         </div>  
-        <!-- // Блок с картинкой --> 
+        <!-- // Слайдер -->
     	
     	<!-- Переключатели контента -->
         <ul class="content-changer">
@@ -48,19 +53,18 @@
         <!-- // Переключатели контента -->
         
         <!-- Инфоблок -->
-        <div class="info-block">
+        <div class="about-infoblock">
         	<div>
-        		<p class="number">120</p>
-        		<p>сотрудников</p>
+        		<p class="about-infoblock__number">120</p>
+        		<p class="about-infoblock__text">сотрудников</p>
         	</div>
         	<div>
-        		<p class="number">46</p>
-        		<p>палат</p>
+        		<p class="about-infoblock__number">46</p>
+        		<p class="about-infoblock__text">палат</p>
         	</div>
         	<div>
-        		<p class="number">11</p>
-        		<p>косметологических<br>
-        		кабинетов</p>
+        		<p class="about-infoblock__number">11</p>
+        		<p class="about-infoblock__text">косметологических<br> кабинетов</p>
         	</div>
         </div>
         <!-- // Инфоблок -->
@@ -80,20 +84,20 @@
         <!-- // 2 колонки -->
         
         <!-- Слайдер -->
-        <div class="slider">
-        	<div class="wrapper">
-        		<div class="slide">
-        			<img src="" alt="">
-        			<img src="" alt="">
+        <div class="content-slider"><!-- basics.scss -->
+        	<div class="content-slider__wrapper">
+        		<div class="slide columns">
+        			<div class="content-slider__image columns__two"><img src="" alt=""></div>
+        			<div class="content-slider__image columns__two"><img src="" alt=""></div>
         		</div>
-        		<div class="slide">
-        			<img src="" alt="">
-        			<img src="" alt="">
+        		<div class="slide columns">
+        			<div class="content-slider__image columns__two"><img src="" alt=""></div>
+        			<div class="content-slider__image columns__two"><img src="" alt=""></div>
         		</div>
         	</div>
-        	<div class="slider-arrows">
-        		<a href="" class="arrow"></a>
-        		<a href="" class="arrow"></a>
+        	<div class="content-slider-arrows">
+        		<a href="#" class="slider-arrow slider-arrow_prev"><img src="#" alt=""></a><!-- Стили стрелок в basics, положение - внутри slider-arrows. Эти же стили используются для стрелок верхнего слайдера (которые слева и справа прилеплены к экрану) -->
+        		<a href="#" class="slider-arrow slider-arrow_next"><img src="#" alt=""></a><!-- Стрелочек если нет в svg, делаем серый квадрат img, потом заменим -->
         	</div>
         </div>
         <!-- // Слайдер -->

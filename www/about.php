@@ -28,20 +28,20 @@
 
 <!-- Контент страницы  -->
 <main class="main-content">
-    <div class="top-slider-container"><!-- Во всю ширину страницы -->
+    <div class="top-slider-container">
         
-        <aside class="top-slider-container__nav"><!-- position:absolute; width:100%; top:50%; -->
+        <aside class="top-slider-container__nav">
             <!-- Тут будет HTML для навигации -->
         </aside>
        
         <div class="container">
            <!-- Слайдер -->
-            <div class="text-image-block text-image-block_image-slider"><!-- Это у нас превращается в слайдер (слева и справа от него - перключалки) -->
-                <div class="text-image-block__slider-wrapper">
-                    <div class="text-image-block__slide"><img src="img/imageblock/example.png" alt="@@" class="text-image-block__bgimage"></div>
-                    <div class="text-image-block__slide"><img src="img/imageblock/example.png" alt="@@" class="text-image-block__bgimage"></div>
-                    <div class="text-image-block__slide"><img src="img/imageblock/example.png" alt="@@" class="text-image-block__bgimage"></div>
-                    <div class="text-image-block__slide"><img src="img/imageblock/example.png" alt="@@" class="text-image-block__bgimage"></div>
+            <div class="text-image-block text-image-block_image-slider slider">
+                <div class="text-image-block__slider-wrapper wrapper">
+                    <div class="text-image-block__slide slide"><img src="img/imageblock/example.png" alt="@@" class="text-image-block__bgimage"></div>
+                    <div class="text-image-block__slide slide"><img src="img/imageblock/example.png" alt="@@" class="text-image-block__bgimage"></div>
+                    <div class="text-image-block__slide slide"><img src="img/imageblock/example.png" alt="@@" class="text-image-block__bgimage"></div>
+                    <div class="text-image-block__slide slide"><img src="img/imageblock/example.png" alt="@@" class="text-image-block__bgimage"></div>
                 </div>
             </div>  
             <!-- // Слайдер -->
@@ -86,15 +86,16 @@
                 <p class="columns__maintext">«СПИКА» - один из крупнейших медицинских центров в России. Общая площадь клиники составляет более 1500 квадратных метров и включает в себя современный операционный блок (2 больших и 1 малая операционные), 12 палат класса deluxe (с панорамным видом на акваторию Невы и легендарный крейсер «Аврора»), а также отделение медицинской косметологии с новейшими, современными аппаратами.</p>
             </div>
             <div class="columns__two">
-                <p class="columns__maintext">Парк медицинского оборудования представлен как уже известными традиционными аппаратами, так и новейшими установками, впервые представленными в России. Клиника соответствует всем мировым и российским стандартам, что подтверждается имеющимися лицензиями. На базе клиники «СПИКА» открыт учебный центр по эстетической медицине, в котором проводится специализированное разностороннее обучение современным технологиям работы в области пластической хирургии и медицинской косметологии. Врачи клиники регулярно посещают крупнейшие конгрессы и конференции, где выступают в качестве приглашенных экспертов.</p>
+                <p class="columns__maintext">Парк медицинского оборудования представлен как уже известными традиционными аппаратами, так и новейшими установками, впервые представленными в России. Клиника соответствует всем мировым и российским стандартам, что подтверждается имеющимися лицензиями.<br>
+                На базе клиники «СПИКА» открыт учебный центр по эстетической медицине, в котором проводится специализированное разностороннее обучение современным технологиям работы в области пластической хирургии и медицинской косметологии. Врачи клиники регулярно посещают крупнейшие конгрессы и конференции, где выступают в качестве приглашенных экспертов.</p>
                 <p class="columns__maintext">Для пациентов пластической хирургии в послеоперационный период предлагается специально подобранное авторское меню от Бренд-шефа CITYTEL Group Дмитрия Щербакова.</p>
             </div>
         </div>
         <!-- // 2 колонки -->
         
         <!-- Слайдер -->
-        <div class="content-slider"><!-- basics.scss -->
-        	<div class="content-slider__wrapper">
+        <div class="content-slider slider">
+        	<div class="content-slider__wrapper wrapper">
         		<div class="slide columns">
         			<div class="content-slider__image columns__two"><img src="" alt=""></div>
         			<div class="content-slider__image columns__two"><img src="" alt=""></div>
@@ -105,8 +106,30 @@
         		</div>
         	</div>
         	<div class="content-slider-arrows">
-        		<a href="#" class="slider-arrow slider-arrow_prev"><img src="#" alt=""></a><!-- Стили стрелок в basics, положение - внутри slider-arrows. Эти же стили используются для стрелок верхнего слайдера (которые слева и справа прилеплены к экрану) -->
-        		<a href="#" class="slider-arrow slider-arrow_next"><img src="#" alt=""></a><!-- Стрелочек если нет в svg, делаем серый квадрат img, потом заменим -->
+        		<a href="#" class="slider-arrow slider-arrow_prev inactive">
+        			<svg width="9px" height="18px" viewBox="0 0 11 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    				<title>Path 2 Copy</title>
+    				<desc>Created with Sketch.</desc>
+    				<defs></defs>
+    				<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        			<g id="Arrow-Right-Active" transform="translate(-17.000000, -12.000000)" stroke="#4E7AB5">
+            		<polyline id="Path-2-Copy" transform="translate(22.597433, 20.890434) rotate(180.000000) translate(-22.597433, -20.890434) " points="27.1948657 12 18 21.1948657 26.5860013 29.780867"></polyline>
+        			</g>
+   					</g>
+					</svg>
+       			</a>
+        		<a href="#" class="slider-arrow slider-arrow_next">
+					<svg width="9px" height="18px" viewBox="0 0 11 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    				<title>Path 2 Copy</title>
+    				<desc>Created with Sketch.</desc>
+    				<defs></defs>
+    				<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        			<g id="Arrow-Right-Active" transform="translate(-17.000000, -12.000000)" stroke="#4E7AB5">
+            		<polyline id="Path-2-Copy" transform="translate(22.597433, 20.890434) rotate(180.000000) translate(-22.597433, -20.890434) " points="27.1948657 12 18 21.1948657 26.5860013 29.780867"></polyline>
+        			</g>
+   					</g>
+					</svg>		
+       			</a>
         	</div>
         </div>
         <!-- // Слайдер -->

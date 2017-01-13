@@ -95,19 +95,21 @@
         
         <!-- Слайдер -->
         <div class="content-slider slider">
-        	<div class="content-slider__wrapper wrapper">
-        		<div class="slide columns">
-        			<div class="content-slider__image columns__two"><img src="" alt=""></div>
-        			<div class="content-slider__image columns__two"><img src="" alt=""></div>
-        		</div>
-        		<div class="slide columns">
-        			<div class="content-slider__image columns__two"><img src="" alt=""></div>
-        			<div class="content-slider__image columns__two"><img src="" alt=""></div>
-        		</div>
+        	<div class="content-slider__overflow">
+        	    <div class="content-slider__wrapper wrapper">
+        	        <div class="slide columns">
+        	            <div class="content-slider__image columns__two"><img src="" alt=""></div>
+        	            <div class="content-slider__image columns__two"><img src="" alt=""></div>
+        	        </div>
+        	        <div class="slide columns">
+        	            <div class="content-slider__image columns__two"><img src="" alt=""></div>
+        	            <div class="content-slider__image columns__two"><img src="" alt=""></div>
+        	        </div>
+        	    </div>
         	</div>
         	<div class="content-slider-arrows">
         		<a href="#" class="slider-arrow slider-arrow_prev inactive">
-        			<svg width="9px" height="18px" viewBox="0 0 11 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        			<svg width="11" height="18" viewBox="0 0 11 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     				<title>Path 2 Copy</title>
     				<desc>Created with Sketch.</desc>
     				<defs></defs>
@@ -119,7 +121,7 @@
 					</svg>
        			</a>
         		<a href="#" class="slider-arrow slider-arrow_next">
-					<svg width="9px" height="18px" viewBox="0 0 11 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<svg width="11" height="18" viewBox="0 0 11 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     				<title>Path 2 Copy</title>
     				<desc>Created with Sketch.</desc>
     				<defs></defs>

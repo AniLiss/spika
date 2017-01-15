@@ -2,9 +2,7 @@
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var postcss = require('gulp-postcss');
 var plumber = require('gulp-plumber');
-var autoprefixer = require('autoprefixer');
 var server = require('browser-sync').create();
 var rename = require('gulp-rename');
 var minify = require('gulp-csso');

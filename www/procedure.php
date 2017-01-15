@@ -9,7 +9,8 @@
     <?php include "blocks/css.php"; ?>
 </head>
 
-<body class="page-procedure"><!-- через этот класс вносишь правки по отступам между блоками в default.scss (см. примеры) --> 
+<body class="page-procedure"><!-- через этот класс вносишь правки по отступам между блоками в default.scss (см. примеры
++) --> 
 
 <?php include "blocks/header.php"; ?>
 

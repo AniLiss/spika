@@ -9,7 +9,7 @@
     <?php include "blocks/css.php"; ?>
 </head>
 
-<body> 
+<body class="page-doctorspage">
 
 <?php include "blocks/header.php"; ?>
 
@@ -28,14 +28,14 @@
 <!-- // Заголовок + хлебные крошки -->
 
 <!-- Контент страницы  -->
-<main class="main-content doctorspage">
+<main class="main-content">
     <div class="container">
     
     	<!-- Текстовый блок с картинкой -->
         <div class="text-image-block text-image-block_doctor">
             <p class="text-image-block__heading">Александров<br> Константин<br> Самойлович</p>
-            <p class="text-image-block__text">Короткое описание деятельности или личная информация о враче. Несколько строк.</p>
-            <img src="img/imageblock/example.png" alt="@@" class="text-image-block__bgimage">
+            <p class="text-image-block__text">Короткое описание деятельности или<br> личная информация о враче. Несколько<br> строк.</p>
+            <img src="" alt="@@" class="text-image-block__bgimage" width="494" height="673">
         </div>  
         <!-- // Текстовый блок с картинкой -->
         
@@ -49,12 +49,12 @@
                 <p class="columns__maintext">— Клиническая ординатура по челюстно-лицевой хирургии Санкт-Петербургского Государственного медицинского университета им. акад. И.П. Павлова.</p>
                 <p class="columns__maintext">— Первичная специализация по специальности «Ортодонтия» на кафедре детской стоматологии Санкт-Петербургской медицинской академии последипломного образования (МАПО).</p>
                 <p class="columns__maintext">— Специализация по пластической хирургии на базе Военно-медицинской академии им. С.М. Кирова.</p>
-                <p class="smalltitle">Опыт работы</p> <!-- .columns__maintext + .smalltitle -->
+                <p class="smalltitle">Опыт работы</p>
                 <p class="columns__maintext">С 2000 г. – Врач-хирург отделения пластической хирургии СПИК, Санкт-Петербург</p>
                	<p class="columns__maintext">С 2016 г. – Врач-хирург отделения пластической хирургии Института красоты СПИКА, Санкт-Петербург (сертификат 0178270028161 от 20.11.15)</p>
                	<p class="smalltitle">Повышение квалификации</p>
-                <ul class="dots-list"><!-- В basics.scss -->
-                	<li>Курс по применению компрессионно-дистракционных аппаратов в Московском центре детской челюстно-лицевой хирургии (Детская больница им. Св. Владимира) (Москва, июнь 2001 г.)</li> <!-- в списке таком     можно без <p> обойтись. Т.е. просто для li задаешь стиль -->
+                <ul class="dots-list">
+                	<li>Курс по применению компрессионно-дистракционных аппаратов в Московском центре детской челюстно-лицевой хирургии (Детская больница им. Св. Владимира) (Москва, июнь 2001 г.)</li>
                 	<li>Семинар по вопросам увеличивающей маммопластики (Стамбул, 2007 г.)</li>
                 	<li>Съезд европейской ассоциации лингвальных ортодонтов (Канны, июль 2008 г.)</li>
                 	<li>Съезд пластических хирургов (Екатеринбург, 2009 г.)</li>
@@ -71,7 +71,7 @@
             <!-- 1/3 колонки -->
             <div class="columns__third">
                 <p class="smalltitle">Статистика</p>
-                <div class="doctors-statistic"> <!-- basics.scss -->
+                <div class="doctors-statistic">
                     <div class="doctors-statistic__col">
                         <p class="doctors-statistic__number">15</p>
                         <p class="doctors-statistic__text">Общий стаж</p>
@@ -86,24 +86,24 @@
                     </div>
                 </div>
                 
-                <p class="smalltitle">Последние работы</p><!-- Задай всем smalltitle на этой странице одинаковый отступ вверх, даже если это будет немного не pixel-perfect -->
-                <div class="last-works-list"><!-- basics.scss. Каждый <a> это контейнер со скругленными углами для картинки. Похожий блок будет в другой странице вроде -->
-                    <a href=""><img src="" alt=""></a>
-                    <a href=""><img src="" alt=""></a>
-                    <a href=""><img src="" alt=""></a>
-                    <a href=""><img src="" alt=""></a>
-                    <a href=""><img src="" alt=""></a>
-                    <a href=""><img src="" alt=""></a>
-                    <a href=""><img src="" alt=""></a>
-                    <a href=""><img src="" alt=""></a>
-                    <a href=""><img src="" alt=""></a>
+                <p class="smalltitle">Последние работы</p>
+                <div class="last-works-list">
+                    <a href="#"><img src="" alt=""></a>
+                    <a href="#"><img src="" alt=""></a>
+                    <a href="#"><img src="" alt=""></a>
+                    <a href="#"><img src="" alt=""></a>
+                    <a href="#"><img src="" alt=""></a>
+                    <a href="#"><img src="" alt=""></a>
+                    <a href="#"><img src="" alt=""></a>
+                    <a href="#"><img src="" alt=""></a>
+                    <a href="#"><img src="" alt=""></a>
                 </div>
                 
                 <p class="smalltitle">В социальных сетях</p>
-                <ul class="social-page-list"><!-- basics.scss. У СВГ ниже меняешь только width и height для нужного размера, viewbox не трогаешь -->
-                	<li><a href="#"><svg viewBox="0 0 20 18" width="20" height="18"><use xlink:href="img/social_icons.svg#mail"></use></svg></a></li>
-                	<li><a href="#"><svg viewBox="43 0 13 18" width="20" height="18"><use xlink:href="img/social_icons.svg#vk"></use></svg></a></li>
-                	<li><a href="#"><svg viewBox="88 0 10 18" width="18" height="18"><use xlink:href="img/social_icons.svg#facebook"></use></svg></a></li>
+                <ul class="social-page-list">
+                	<li><a href="#"><svg viewBox="0 0 20 18" width="32" height="26"><use xlink:href="img/social_icons.svg#mail"></use></svg></a></li>
+                	<li><a href="#"><svg viewBox="43 0 13 18" width="41" height="24"><use xlink:href="img/social_icons.svg#vk"></use></svg></a></li>
+                	<li><a href="#"><svg viewBox="88 0 10 18" width="28" height="28"><use xlink:href="img/social_icons.svg#facebook"></use></svg></a></li>
             	</ul>
                	<a href="http://www.alexandrovkonst.ru" target="_blank">www.alexandrovkonst.ru</a>
                 
@@ -113,7 +113,7 @@
             <!-- 1 колонка -->
             <div class="columns__one">
                 <p class="smalltitle">Instagram: <a href="#" class="smalltitle__instalink">kostopraver</a></p>
-                <ul class="doctor-instagram"> <!-- basics.scss -->
+                <ul class="doctor-instagram">
                 	<li><a href=""><img src="" target="_blank" alt=""></a></li>
                 	<li><a href=""><img src="" target="_blank" alt=""></a></li>
                 	<li><a href=""><img src="" target="_blank" alt=""></a></li>

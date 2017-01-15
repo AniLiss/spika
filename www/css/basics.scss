@@ -95,6 +95,9 @@ p {font-size:14px; line-height:1.7em;}
     a:hover {color:#abb3bd}
     &+.blue-links-list {margin-top:23px;}
     &+.columns__maintext {margin-top:36px;}
+	&__instalink {color: #4e7ab5 !important;
+		&:hover {color: #5f98da !important;}
+	}
 }
 
 
@@ -223,6 +226,10 @@ textarea {resize: none; height: 131px; border-radius: 29px; padding: 17px 27px;
 	&__slider-wrapper {height: 100%;}
 	&__slide {height: 100%;
 		img {left: 0; top: 0; object-fit: cover; min-width: 100%; min-height: 100%; width: 0; max-height: auto;}
+	}
+	&_doctor {min-height: 586px; background-color: #fff; display: flex; flex-direction: column; justify-content: center; padding: 20px 42% 118px 150px; overflow: visible;
+		.text-image-block__text {margin-top: 34px;}
+		img {background-color: #ccc; right: 6%; max-height: 673px;}
 	}
 }
 
@@ -399,4 +406,44 @@ textarea {resize: none; height: 131px; border-radius: 29px; padding: 17px 27px;
 		svg g {stroke: #bfbfbf;}
 	}
     &:not(.inactive):hover {opacity:.7}
+}
+
+/* ####################### */
+
+.dots-list {
+	li {font-size: 15px; position: relative; margin-top: 4px; padding-left: 36px;
+		&:before {content: ""; display: inline-block; width: 5px; height: 5px; border-radius: 1000px; background-color: #000; margin-right: 19px; position: absolute; left: 13px; top: 5px;}
+		&:first-child {margin-top: 0;}
+	}
+}
+
+/* ####################### */
+
+.doctors-statistic {display: flex; justify-content: space-between; text-align: center; padding-right: 32px;
+	&__col {width: 29%;}
+	&__number {font-family: Muller; font-size: 40px; font-weight: 300; color: #4e7ab5;}
+	&__text {font-size: 15px; color: #4b4b4b; padding: 0 7px; line-height: 1.5em; margin-top: -3px;}
+}
+
+/* ####################### */
+
+.last-works-list {padding: 0 91px 0 8px; display: flex; justify-content: space-between; flex-wrap: wrap;
+	a {display: inline-block; width: 32%; height: 66px; border-radius: 10px; overflow: hidden; margin-top: 5px;}
+	img {width: 100%; height: 100%; object-fit: cover; background-color: #ccc;}
+}
+
+/* ####################### */
+
+.social-page-list {
+	li {display:inline-block; vertical-align: middle; margin-right:15px;}
+    use {fill:#2b79be; width: 100%; height: 100%;}
+    a:hover use {fill:#5f98da}
+}
+
+/* ####################### */
+
+.doctor-instagram {margin-top: 19px;
+	li {display: inline-block;}
+	a {display: inline-block; width: 111px; height: 111px; border-radius: 3px; margin-right: 16px; overflow: hidden;}
+	img {width: 100%; height: 100%; object-fit: cover; background-color: #ccc;}
 }

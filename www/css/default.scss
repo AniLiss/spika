@@ -94,6 +94,74 @@
 	}
 }
 
+.page-procedure {
+	.page-heading {
+		margin-top: 82px;
+	}
+
+	.smalltitle {
+		padding-bottom: 15px;
+	}
+
+	.main-content {
+		margin-top: 15px;
+	}
+
+	.content-changer {
+		margin-bottom: 70px;
+
+		li {
+			margin-right: 81px;
+
+			&:nth-child(3) {
+				margin-right: 76px;
+			}
+
+			&:nth-child(4) {
+				margin-right: 58px;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.text-image-block__bgimage {
+		width: 420px;
+		height: 588px;
+	}
+
+	.subscribe-block {
+		margin-top: 70px;
+	}
+}
+
+.small-text-action__date {
+	margin-top: 0;
+}
+
+.procedure-text-block {
+	padding-top: 55px;
+
+	&:first-child {
+		padding: 0 35px 0 0;
+	}
+
+	.columns__maintext {
+		//margin-top: 15px;
+	}
+
+	.dots-list {
+		padding: 35px 0;
+
+		p {
+			line-height: 1.4em;
+		}
+	}
+}
+
+
 /* ####################### */
 /* Всплывающие окна и пр. */
 /* ####################### */

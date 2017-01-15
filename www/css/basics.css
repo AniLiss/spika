@@ -241,7 +241,7 @@ textarea {
     border-color: #dedede;
     color: #cacaca; }
   /* line 129, D:/Projects/home/spika/www/css/basics.scss */
-  .button__big {
+  .button_big {
     height: 44px;
     line-height: 42px;
     font-size: 20px; }
@@ -970,7 +970,8 @@ textarea {
     height: 100%;
     overflow: hidden; }
 
-/* line 388, D:/Projects/home/spika/www/css/basics.scss */
+/* ####################### */
+/* line 390, D:/Projects/home/spika/www/css/basics.scss */
 .content-slider-arrows {
   position: absolute;
   left: 0;
@@ -979,7 +980,8 @@ textarea {
   width: 100%;
   height: 42px; }
 
-/* line 390, D:/Projects/home/spika/www/css/basics.scss */
+/* ####################### */
+/* line 394, D:/Projects/home/spika/www/css/basics.scss */
 .slider-arrow {
   display: inline-block;
   width: 42px;
@@ -988,7 +990,7 @@ textarea {
   border-radius: 1000px;
   position: absolute;
   transition: all .25s ease-in-out; }
-  /* line 391, D:/Projects/home/spika/www/css/basics.scss */
+  /* line 395, D:/Projects/home/spika/www/css/basics.scss */
   .slider-arrow svg {
     position: absolute;
     top: 0;
@@ -996,28 +998,28 @@ textarea {
     left: 0;
     right: 0;
     margin: auto; }
-  /* line 392, D:/Projects/home/spika/www/css/basics.scss */
+  /* line 396, D:/Projects/home/spika/www/css/basics.scss */
   .slider-arrow_prev {
     left: -25px; }
-    /* line 393, D:/Projects/home/spika/www/css/basics.scss */
+    /* line 397, D:/Projects/home/spika/www/css/basics.scss */
     .slider-arrow_prev svg {
       transform: rotate(180deg);
       right: 3px; }
-  /* line 395, D:/Projects/home/spika/www/css/basics.scss */
+  /* line 399, D:/Projects/home/spika/www/css/basics.scss */
   .slider-arrow_next {
     right: -25px; }
-    /* line 396, D:/Projects/home/spika/www/css/basics.scss */
+    /* line 400, D:/Projects/home/spika/www/css/basics.scss */
     .slider-arrow_next svg {
       left: 3px; }
-  /* line 398, D:/Projects/home/spika/www/css/basics.scss */
+  /* line 402, D:/Projects/home/spika/www/css/basics.scss */
   .slider-arrow.inactive {
     border-style: dashed;
     border-color: #bfbfbf;
     pointer-events: none; }
-    /* line 399, D:/Projects/home/spika/www/css/basics.scss */
+    /* line 403, D:/Projects/home/spika/www/css/basics.scss */
     .slider-arrow.inactive svg g {
       stroke: #bfbfbf; }
-  /* line 401, D:/Projects/home/spika/www/css/basics.scss */
+  /* line 405, D:/Projects/home/spika/www/css/basics.scss */
   .slider-arrow:not(.inactive):hover {
     opacity: .7; }
 
